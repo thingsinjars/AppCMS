@@ -1,8 +1,12 @@
-Install
-=======
+This is a collection of modules, settings and a custom theme that allows Drupal 6 to be used as a CMS for a mobile app. It can also be used to create a very mobile-friendly site but it's best when the flattened site is put inside the www folder of a PhoneGap project.
 
-Drupal 6
---------
+This might end up in an installation profile at some point.
+
+
+Installation Procedure
+======================
+
+First, install Drupal 6
 
 Install these standard modules
 ------------------------------
@@ -12,6 +16,8 @@ Install these standard modules
  * menu_block
  * token
  * toolbar
+ * mobile_tools
+ * filefield
 
 Install this standard theme
 ---------------------------
@@ -27,6 +33,8 @@ Install these customised modules
 Install this custom theme
 -------------------------
  * appcms
+
+Use admin_theme to enable appcms as the default theme and Seven as the admin theme
 
 
 
@@ -66,7 +74,7 @@ Image Gallery
 
 Content
 =============
-Add to Page type
+Add these fields to Page type
 ----------------
  * Audio (field_audio)
    * Upload audio to embed it in this page
@@ -91,22 +99,32 @@ Add to Page type
 
 Navigation
 ----------
- * Change Primary Links to Tab Bar
+ * Change name of 'Primary Links' to 'Tab Bar'
+ * Add the 'Tab Bar' block created by menu_block to the 'block' region
+   * Menu: Tab Bar
+   * Item: <root of Tab Bar>
+	 * Starting level: 2nd level (secondary)
+	 * √ Make the starting level follow the active menu item
+	 * Starting level will be: Children of active menu item
+	 * Maximum depth: 1
 
 Content Types
 -------------
-Event - Title & Date
-Calendar - Holds many events
+ * Event
+   * Standard content with a title & a date field called field_date
+
+The most recent code for the plugin behind the events calendar (available at /calendar) is available at:
+https://github.com/thingsinjars/jQTouch-Calendar
 
 View
 ----
 Set up a custom View of Calendar
-(see events_list.view)
+(import events_list.view)
 
 HTML Export
 ===========
 After export, change links in index.html from href="node/x" to href="pagex.html"
-This bit still should be handled by html_export but double-check
+This bit still should be handled by html_export but double-check.
 
  * RegEx
 	 * href="node/([0-9])*"
