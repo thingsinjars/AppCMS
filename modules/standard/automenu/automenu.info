@@ -1,0 +1,12 @@
+; $Id: automenu.info,v 1.2.2.2 2010/09/01 13:18:13 farbridges Exp $
+name = AutoMenu
+description = "Automatically set parent menu item for nodes"
+dependencies[] = menu
+core = 6.x
+
+; Information added by drupal.org packaging script on 2010-11-10
+version = "6.x-1.0"
+core = "6.x"
+project = "automenu"
+datestamp = "1289401313"
+

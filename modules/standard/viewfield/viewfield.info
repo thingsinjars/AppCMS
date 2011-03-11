@@ -1,0 +1,14 @@
+; $Id: viewfield.info,v 1.4 2010/08/24 16:29:47 sun Exp $
+name = Viewfield
+description = Defines a field type that displays the contents of a view in a node.
+package = CCK
+dependencies[] = views
+dependencies[] = content
+core = 6.x
+
+; Information added by drupal.org packaging script on 2010-08-24
+version = "6.x-1.0"
+core = "6.x"
+project = "viewfield"
+datestamp = "1282668110"
+

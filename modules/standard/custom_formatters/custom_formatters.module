@@ -1,0 +1,418 @@
+<?php
+// $Id: custom_formatters.module,v 1.2.2.10 2010/03/02 06:34:31 deciphered Exp $
+/**
+ * @file
+ * Contains core functions for the Custom Formatters module.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function custom_formatters_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#custom_formatters':
+      $output = '<p>' . t('The Custom Formatters module is a simple utility for creating CCK Formatters which are used to theme the output of CCK fields.') . '</p>';
+      $output .= '<p>' . t('There are two different modes available for creating a custom formatter, each with their own pros and cons:') . '</p>';
+      $output .= '<h2>' . t('Basic') . '</h2>';
+      $output .= '<p>' . t('The basic formatter editor offers a simple HTML editor with support for the !token module for extremely easy custom formatter creation, but your formatter can only be created for a single CCK field type and can not support multiple values.', array('!token' => l(t('Token'), 'http://drupal.org/project/token'))) . '</p>';
+      $output .= '<h2>' . t('Advanced') . '</h2>';
+      $output .= '<p>' . t('The advanced formatter editor supports multiple CCK field types and multiple values in a single formatter, but as it is PHP based the user will require a basic knowledge of !php and the !drupalapi.', array('!php' => l(t('PHP'), 'http://www.php.net'), '!drupalapi' => l(t('Drupal API'), 'http://api.drupal.org'))) . '</p>';
+      $output .= '<p>&nbsp;</p><h2>' . t('Tips & Tricks for Advanced formatters') . '</h2>';
+      $output .= '<ul><li>' . t('Before you can create an advanced formatter, you need to know what variables you have to work with, the easiest way to determine this information is by doing the following:');
+      $output .= '<ol><li>' . t('Install and enable the !devel module and the !devel_generate sub-module.', array('!devel' => l(t('Devel'), 'http://drupal.org/project/devel'), '!devel_generate' => '<strong>' . t('Devel generate') . '</strong>')) . '</li>';
+      $output .= '<li>' . t('Create a new formatter containing the following code:') . '<br /><code>dpm($element);</code></li>';
+      $output .= '<li>' . t('Hit the !preview button.', array('!preview' => '<strong>' . t('Preview') . '</strong>')) . '</li></ol></li>';
+      $output .= '<li>' . t('As mentioned above, the code for formatters with %multiple option disabled is different than with it enabled, this is due to the structure of the $element variable. The following code snippets are basic templates for handling these two variations:', array('%multiple' => t('Handle multiple values')));
+      $output .= '<br /><br /><strong>' . t('With %multiple disabled:', array('%multiple' => t('Handle multiple values'))) . '</strong><br /><code>$output = \'\';<br />if ($element[\'#item\']) {<br />&nbsp;&nbsp;// Formatter code goes here.<br />}<br />return $output;</code>';
+      $output .= '<br /><br /><strong>' . t('With %multiple enabled:', array('%multiple' => t('Handle multiple values'))) . '</strong><br /><code>$output = \'\';<br />foreach (element_children($element) as $key) {<br />&nbsp;&nbsp;if ($element[$key][\'#item\']) {<br />&nbsp;&nbsp;&nbsp;&nbsp;// Formatter code goes here.<br />&nbsp;&nbsp;}<br />}<br />return $output;</code>';
+      $output .= '<br /><br /><strong>' . t('Note') . ':</strong> ' . t('This code is only meant as an example of the differences and may not satisfy all users needs.') . '</li>';
+      $output .= '</ul>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_perm().
+ */
+function custom_formatters_perm() {
+  return array('administer custom formatters');
+}
+
+/**
+ * Implements hook_init().
+ */
+function custom_formatters_init() {
+  foreach (module_list() as $module) {
+    if (file_exists($file = drupal_get_path('module', 'custom_formatters') . '/modules/' . $module . '.inc')) {
+      require_once $file;
+    }
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function custom_formatters_theme() {
+  $theme = array(
+    'custom_formatters_overview' => array(
+      'arguments' => array('form' => NULL),
+      'file' => 'custom_formatters.admin.inc',
+    ),
+
+    'custom_formatters_formatter' => array(
+      'arguments' => array(
+        'element' => NULL
+      ),
+    ),
+
+    'custom_formatters_export' => array(
+      'arguments' => array(
+        'formatters' => NULL,
+        'name' => NULL,
+      ),
+      'template' => 'custom_formatters_export',
+    ),
+
+    'custom_formatters_token_help' => array(
+      'arguments' => array('field' => NULL, 'prefix' => '[', 'suffix' => ']'),
+      'file' => 'custom_formatters.admin.inc',
+    ),
+
+    'custom_formatters_preview' => array(
+      'arguments' => array('formatter' => NULL),
+      'file' => 'custom_formatters.admin.inc',
+    ),
+  );
+
+  foreach (custom_formatters_formatters() as $formatter) {
+    $theme['custom_formatters_formatter_custom_formatters_' . $formatter->name] = array(
+      'arguments' => array('element' => NULL),
+      'function' => 'theme_custom_formatters_formatter',
+    );
+  }
+
+  // Invoke hook_custom_formatters_theme().
+  foreach (module_implements('custom_formatters_theme') as $module) {
+    $function = $module . '_custom_formatters_theme';
+    $function($theme);
+  }
+
+  return $theme;
+}
+
+/**
+ * Implements hook_menu().
+ */
+function custom_formatters_menu() {
+  $items = array();
+
+  $items['admin/settings/formatters'] = array(
+    'title' => 'Custom Formatters',
+    'description' => 'Configure custom CCK formatter templates.',
+    'file' => 'custom_formatters.admin.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_formatters_overview'),
+    'access arguments' => array('administer custom formatters'),
+  );
+  $items['admin/settings/formatters/list'] = array(
+    'title' => 'List',
+    'description' => 'Configure custom CCK formatter templates.',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'weight' => -10,
+  );
+
+  $items['admin/settings/formatters/add'] = array(
+    'title' => 'Add new formatter',
+    'description' => 'Add a custom CCK formatter.',
+    'file' => 'custom_formatters.admin.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_formatters_formatter_form'),
+    'access arguments' => array('administer custom formatters'),
+    'type' => MENU_LOCAL_TASK,
+  );
+
+  $items['admin/settings/formatters/edit/%custom_formatters_cfid'] = array(
+    'title callback' => 'custom_formatters_formatter_title_callback',
+    'title arguments' => array('Edit formatter: !name', 4),
+    'description' => 'Edit a custom CCK formatter.',
+    'file' => 'custom_formatters.admin.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_formatters_formatter_form', 4, 'edit'),
+    'access arguments' => array('administer custom formatters'),
+    'type' => MENU_CALLBACK,
+  );
+
+  $items['admin/settings/formatters/delete/%custom_formatters_cfid'] = array(
+    'title callback' => 'custom_formatters_formatter_title_callback',
+    'title arguments' => array('Delete formatter: !name', 4),
+    'description' => 'Delete a custom CCK formatter.',
+    'file' => 'custom_formatters.admin.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_formatters_formatter_delete_form', 4),
+    'access arguments' => array('administer custom formatters'),
+    'type' => MENU_CALLBACK,
+  );
+
+  $items['admin/settings/formatters/clone/%custom_formatters_cfid'] = array(
+    'title callback' => 'custom_formatters_formatter_title_callback',
+    'title arguments' => array('Clone formatter: !name', 4),
+    'description' => 'Clone a custom CCK formatter.',
+    'file' => 'custom_formatters.admin.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_formatters_formatter_form', 4, 'clone'),
+    'access arguments' => array('administer custom formatters'),
+    'type' => MENU_CALLBACK,
+  );
+
+  $items['admin/settings/formatters/export/%custom_formatters_cfid'] = array(
+    'title callback' => 'custom_formatters_formatter_title_callback',
+    'title arguments' => array('Export formatter: !name', 4),
+    'description' => 'Export a custom CCK formatter.',
+    'file' => 'custom_formatters.admin.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_formatters_formatter_export_form', 4),
+    'access arguments' => array('administer custom formatters'),
+    'type' => MENU_CALLBACK,
+  );
+
+  $items['js/formatters/autocomplete'] = array(
+    'title' => 'Formatters autocomplete',
+    'file' => 'custom_formatters.admin.inc',
+    'page callback' => 'custom_formatters_autocomplete',
+    'access arguments' => array('administer custom formatters'),
+    'type' => MENU_CALLBACK,
+  );
+  $items['js/formatters/tokens'] = array(
+    'title' => 'Formatters tokens',
+    'file' => 'custom_formatters.admin.inc',
+    'page callback' => 'custom_formatters_token_help',
+    'access arguments' => array('administer custom formatters'),
+    'type' => MENU_CALLBACK,
+  );
+  $items['js/formatters/preview'] = array(
+    'title' => 'Formatters preview',
+    'file' => 'custom_formatters.admin.inc',
+    'page callback' => 'custom_formatters_preview',
+    'access arguments' => array('administer custom formatters'),
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * Menu wildcard loader.
+ */
+function custom_formatters_cfid_load($cfid) {
+  return custom_formatters_formatter($cfid, TRUE);
+}
+
+function custom_formatters_formatter_title_callback($title, $formatter = array()) {
+  $replacements = array();
+  if (!empty($formatter)) {
+    $replacements['!name'] = $formatter->name;
+    $replacements['!cfid'] = $formatter->cfid;
+  }
+  return t($title, $replacements);
+}
+
+/**
+ * Get an array of all custom formatters and their settings.
+ *
+ * @param reset
+ *   if set to TRUE it will clear the formatters cache.
+ *
+ * @return
+ *   array of formatters.
+ */
+function custom_formatters_formatters($reset = FALSE, $limit = 0) {
+  static $formatters = array();
+
+  // Clear caches if $reset is TRUE;
+  if ($reset) {
+    $formatters = array();
+    custom_formatters_clear_cache();
+  }
+
+  // Return formatters if the array is populated.
+  if (!empty($formatters)) {
+    return $formatters;
+  }
+
+  // Build the array.
+  $query = 'SELECT * FROM {formatters} ORDER BY label';
+  $result = !$limit ? db_query($query) : pager_query($query, $limit);
+  while ($formatter = db_fetch_object($result)) {
+    $formatters[$formatter->cfid] = $formatter;
+  }
+
+  return $formatters;
+}
+
+function custom_formatters_clear_cache() {
+  global $language;
+  cache_clear_all('content_type_info:' . $language->language, content_cache_tablename());
+  drupal_rebuild_theme_registry();
+}
+
+/**
+ * Load a formatter by cfid.
+ *
+ * @param cfid
+ *   The numeric id of a formatter.
+ *
+ * @return
+ *   formatter array.
+ *   empty array if cfid is an invalid formatter.
+ */
+function custom_formatters_formatter($cfid, $reset = FALSE) {
+  $formatters = custom_formatters_formatters($reset);
+  return (isset($formatters[$cfid])) ? $formatters[$cfid] : array();
+}
+
+/**
+ * Load a formatter by name.
+ *
+ * @param name
+ *   The name of the formatter.
+ *
+ * @return
+ *   formatter array.
+ *   empty array if name is an invalid formatter.
+ */
+function custom_formatters_formatter_by_name($name) {
+  static $formatters_by_name = array();
+  if (!$formatters_by_name && $formatters = custom_formatters_formatters()) {
+    foreach ($formatters as $formatter) {
+      $formatters_by_name[$formatter->name] = $formatter;
+    }
+  }
+  // Make sure $name isn't prefixed with 'custom_formatters_'.
+  $name = (strpos($name, 'custom_formatters_') === 0) ? drupal_substr($name, 18) : $name;
+  return (isset($formatters_by_name[$name])) ? $formatters_by_name[$name] : array();
+}
+
+/**
+ * Implements hook_form_alter();
+ */
+function custom_formatters_form_alter(&$form, &$form_state, $form_id) {
+  // Invoke hook_custom_formatters_form_alter().
+  foreach (module_implements('custom_formatters_form_alter') as $module) {
+    $function = $module . '_custom_formatters_form_alter';
+    $function($form, $form_state, $form_id);
+  }
+}
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function custom_formatters_field_formatter_info() {
+  $formatters = array();
+
+  foreach (custom_formatters_formatters() as $formatter) {
+    $formatters['custom_formatters_' . $formatter->name] = array(
+      'label' => t('Custom: !label', array('!label' => $formatter->label)),
+      'description' => t($formatter->description),
+      'field types' => unserialize($formatter->field_types),
+      'multiple values' => $formatter->multiple ? CONTENT_HANDLE_MODULE : CONTENT_HANDLE_CORE,
+    );
+  }
+
+  return $formatters;
+}
+
+function theme_custom_formatters_formatter($element) {
+  global $theme_path, $theme_info, $conf;
+
+  // Store current theme path.
+  $old_theme_path = $theme_path;
+
+  // Restore theme_path to the theme, as long as drupal_eval() executes,
+  // so code evaluted will not see the caller module as the current theme.
+  // If theme info is not initialized get the path from theme_default.
+  if (!isset($theme_info)) {
+    $theme_path = drupal_get_path('theme', $conf['theme_default']);
+  }
+  else {
+    $theme_path = dirname($theme_info->filename);
+  }
+
+  // Give modules a chance to alter the formatter element.
+  drupal_alter('custom_formatters_formatter_element', $element);
+
+  $output = '';
+  $formatter = is_object($element['#formatter']) ? $element['#formatter'] : custom_formatters_formatter_by_name($element['#formatter']);
+  switch ($formatter->mode) {
+    case 'basic':
+      // Attach 'view' to field item.
+      $info = _content_type_info();
+      if (isset($element['#field_name']) && isset($info['fields'][$element['#field_name']])) {
+        $module = $info['fields'][$element['#field_name']]['module'];
+        $element['#item']['view'] = theme("{$module}_formatter_default", $element);
+      }
+      if (!isset($element['#item']['view']) || !empty($element['#item']['view'])) {
+        $output = _custom_formatters_token_replace($formatter, $element);
+      }
+      break;
+
+    case 'advanced':
+      ob_start();
+      print eval($formatter->code);
+      $output = ob_get_contents();
+      ob_end_clean();
+      break;
+  }
+
+  // Recover original theme path.
+  $theme_path = $old_theme_path;
+
+  return $output;
+}
+
+function _custom_formatters_token_replace($formatter, $element) {
+  $tokens = array();
+
+  if (isset($element['#node']->content)) {
+    // If the following is not done, basic formatters will cause all preceding
+    // fields to not be formatted. The code is completely illogical (IMHO), but
+    // it works.
+    $node_content = $element['#node']->content;
+    unset($element['#node']->content);
+    $element['#node']->content = $node_content;
+  }
+
+  $full = token_get_values('node', $element['#node']);
+  $node_tokens = node_token_values('node', $element['#node']);
+  // Prepend node tokens with 'node-' to prevent namespace conflicts.
+  foreach ($node_tokens as $token => $value) {
+    $full->tokens[array_search($token, $full->tokens)] = 'node-' . $token;
+  }
+  foreach (_custom_formatters_tokens_list(implode(unserialize($formatter->field_types))) as $module) {
+    // Invoke hook_token_values().
+    if (function_exists($function = "{$module}_token_values")) {
+      $tokens = array_merge($tokens, $function('field', array($element['#item'])));
+    }
+  }
+  $full->tokens = array_merge($full->tokens, array_keys($tokens));
+  $full->values = array_merge($full->values, array_values($tokens));
+
+  return _token_replace_tokens($formatter->code, $full->tokens, $full->values, '[', ']');
+}
+
+function _custom_formatters_tokens_list($field) {
+  token_include();
+  $tokens_list = array('custom_formatters');
+  $fields = _content_field_types();
+  // Give modules a chance to alter fields.
+  drupal_alter('custom_formatters_fields', $fields);
+
+  $module = $fields[$field]['module'];
+  // Build list of modules with supported tokens.
+  if (function_exists("{$module}_token_list")) {
+    $tokens_list[] = $module;
+  }
+  // Invoke hook_custom_formatters_field_tokens().
+  $tokens_list = array_merge($tokens_list, module_invoke_all("custom_formatters_{$field}_tokens"));
+
+  return array_unique($tokens_list);
+}

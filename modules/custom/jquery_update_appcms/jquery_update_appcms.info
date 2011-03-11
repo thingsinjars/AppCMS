@@ -1,0 +1,12 @@
+; $Id$
+name = jQuery Update (Modified)
+description = Updates Drupal to use the version of jQuery supplied with the theme otherwise uses the latest version of jQuery.
+package = User Interface
+core = 6.x
+
+; Information added by drupal.org packaging script on 2008-06-23
+version = "6.x-1.1"
+core = "6.x"
+project = "jquery_update_appcms"
+datestamp = "1214262616"
+

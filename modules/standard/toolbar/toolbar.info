@@ -1,0 +1,12 @@
+; $Id$
+name = Toolbar
+description = Presents a toolbar style menu with shortcuts.
+core = 6.x
+package = "Toolbar"
+
+; Information added by drupal.org packaging script on 2010-11-15
+version = "6.x-2.3"
+core = "6.x"
+project = "toolbar"
+datestamp = "1289823085"
+

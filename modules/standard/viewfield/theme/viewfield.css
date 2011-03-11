@@ -1,0 +1,6 @@
+/* $Id: viewfield.css,v 1.2 2010/08/24 16:29:47 sun Exp $ */
+
+tr.odd .viewfield-select .form-item,
+tr.even .viewfield-select .form-item {
+  white-space: normal;
+}

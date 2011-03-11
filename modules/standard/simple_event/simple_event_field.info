@@ -1,0 +1,9 @@
+name = Simple Event Field
+description = Defines a CCK field that contains a date, time and simple description
+core = 6.x
+version = 6.x-1.5
+dependencies[] = content
+dependencies[] = date
+dependencies[] = text
+package = CCK
+

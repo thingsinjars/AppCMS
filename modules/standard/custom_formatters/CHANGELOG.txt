@@ -1,0 +1,56 @@
+// $Id: CHANGELOG.txt,v 1.2.2.11 2010/03/02 06:34:31 deciphered Exp $
+
+Custom Formatters 6.x-1.4, 2010-03-02
+-------------------------------------
+
+- #721526: Improved Preview functionality.
+- #694814 by mauricemengel: Fixed error casued by custom_formatters_token_values().
+- #691010: Added support for the Node displays module.
+- Added two new hooks for future development.
+- Added bulk operations.
+- Added pager to overview.
+- Fixed a bunch of PHP notices.
+- Removed 'Delete' button from clone form.
+
+
+Custom Formatters 6.x-1.3, 2010-02-01
+-------------------------------------
+
+- #694814: Fixed errors with undefined variables.
+- #690948: Fixed issue where basic formatters where processed when fields were empty.
+- #690936: Added additional tokens.
+- #686030: Added Preview feature.
+- #671532: Fixed issue with overly argumentative function.
+- Added hook to display additional tokens in the basic editor tokens list.
+- Added node tokens to basic editor.
+- Added developer documentation.
+- Fixed issue where using a basic formatter prevented further fields being formatted.
+- Fixed issue where path_to_theme() in formatter returned path of module.
+- Improved coding standards via the Coder Tough Love module.
+- Improved node tokens preview.
+
+
+Custom Formatters 6.x-1.2, 2010-01-15
+-------------------------------------
+
+- Added a basic HTML editor with Token support.
+- Added support for the Insert module.
+
+
+Custom Formatters 6.x-1.1, 2010-01-04
+-------------------------------------
+
+- #671532: Fixed multiple warnings.
+- Added Clone feature.
+- Added Export feature.
+- Added support for multiple value formatters.
+- Added missing implementation of hook_perm().
+- Added basic help documentation.
+- Changed 'description' field to optional.
+
+
+Custom Formatters 6.x-1.0, 2009-12-30
+-------------------------------------
+
+- Initial 6.x release.
+
