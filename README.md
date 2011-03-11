@@ -1,79 +1,68 @@
 This is a collection of modules, settings and a custom theme that allows Drupal 6 to be used as a CMS for a mobile app. It can also be used to create a very mobile-friendly site but it's best when the flattened site is put inside the www folder of a PhoneGap project.
 
-This might end up in an installation profile at some point.
-
+Note: Some of these steps could probably be included in the Installation Profile but I haven't figured out how to do that yet.
+Note 2: At the moment, this throws the occasional error during install. This apparently has no effect on whether something has worked or not.
 
 Installation Procedure
 ======================
 
-First, install Drupal 6
+ * Download Drupal 6
+ * Unzip onto your server
+ * Upload /profiles/AppCMS/appcms.profile
+ * Upload the modules listed in modules/modules-README.txt This includes two customised modules:
+   * html\_export - More thorough about changing src & href values
+   * jquery\_update - Uses standard jQuery for Admin area, includes jQuery from theme if it exists
+ * Run the Drupal installer, choosing AppCMS as the Installation Profile
+   * Depending on server configuration, you may see an error about flexifield. This is due to an overlapping dependency. It will go away on the next screen
 
-Install these standard modules
-------------------------------
- * admin_theme
- * cck
- * custom_formatters
- * menu_block
- * token
- * toolbar
- * mobile_tools
- * filefield
+
 
 Install this standard theme
 ---------------------------
- * Seven
-
-Install these customised modules
---------------------------
- * html_export
-   * More thorough about changing src & href values
- * jquery_update
-   * Uses standard jQuery for Admin area, includes jQuery from theme if it exists
+  * Seven (http://drupal.org/project/seven)
 
 Install this custom theme
 -------------------------
- * appcms
+  * AppCMS
 
-Use admin_theme to enable appcms as the default theme and Seven as the admin theme
+Use admin_theme to enable AppCMS as the default theme and Seven as the admin theme
+
+Module settings
+---------------
+  * The jQuery Update module needs to be configured before use
+    * Visit: /admin/settings/jquery\_update\_appcms
+    * choose 'Minified' and save
+
+Structure
+=========
+
+Home Page
+---------
+  * Create a new page (/node/add/page)
+  * Enter holding text for your app's launch page
+	* Visit: /admin/settings/site-information
+    * set the 'Default front page' to the address of this page.
 
 
+Navigation
+----------
+ * Change name of 'Primary Links' to 'Tab Bar'
+ * Add the 'Tab Bar' block created by menu_block to the 'block' region
+   * Menu: Tab Bar
+   * Item: <root of Tab Bar>
+	 * Starting level: 2nd level (secondary)
+	 * √ Make the starting level follow the active menu item
+	 * Starting level will be: Children of active menu item
+	 * Maximum depth: 1
 
-Custom Formatters
-=================
 
-Audio
------
-    <div class="html5-audio-player">
-     <audio controls preload="auto" autobuffer> 
-      <source src="[site-url]/[filefield-filepath]" />
-     </audio>
-    </div>
-
-Video
------
-    <div class="html5-video-player">
-     <video controls preload="auto" autobuffer> 
-      <source src="[site-url]/[filefield-filepath]" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2";'>
-     </video>
-    </div>
-
-Image Gallery
--------------
-    if(count($element['#node']->field_images)) {
-    $output = '<script type="text/javascript">'."\n";
-    $output .= 'jQT.generateGallery("gallery' . $element['#node']->nid . '", ['."\n";
-    foreach ($element['#node']->field_images as $image) {
-       $output .='{src:"' . $image['filepath'] . '", width:100, height:100},'."\n";
-    }
-    $output .= '],{defaultIndex:1});';
-    $output .= '</script>'."\n";
-    $output .= '<ul class="edgetoedge"><li><a href="#gallery' . $element['#node']->nid . '">Launch gallery</a></li></ul>'."\n";
-    $output .= '</script>'."\n";
-    return $output;
-    }
+Section navigation
+------------------
+	* Nodes added as of the top-level Tab Bar items will not be added to the tab bar but will be listed within those sections.
 
 Content
-=============
+=======
+
 Add these fields to Page type
 ----------------
  * Audio (field_audio)
@@ -97,29 +86,27 @@ Add these fields to Page type
    * Not required
    * Maximum of 1
 
-Navigation
-----------
- * Change name of 'Primary Links' to 'Tab Bar'
- * Add the 'Tab Bar' block created by menu_block to the 'block' region
-   * Menu: Tab Bar
-   * Item: <root of Tab Bar>
-	 * Starting level: 2nd level (secondary)
-	 * √ Make the starting level follow the active menu item
-	 * Starting level will be: Children of active menu item
-	 * Maximum depth: 1
+Custom Formatters
+-----------------
+Install the custom formatters listed in custom_formatters/*.php
 
 Content Types
 -------------
  * Event
    * Standard content with a title & a date field called field_date
 
-The most recent code for the plugin behind the events calendar (available at /calendar) is available at:
-https://github.com/thingsinjars/jQTouch-Calendar
-
 View
 ----
-Set up a custom View of Calendar
-(import events_list.view)
+Set up the custom Calendar View by importing events_list.view
+
+Events
+------
+  * Add a Tab Bar menu item (/admin/build/menu-customize/primary-links/add) pointing to the URL 'calendar' (created in Views)
+  * This will display an iCal-like calendar which includes any 'events' content.
+  * Add events (/node/add/event)
+
+The most recent code for the plugin behind the events calendar (available at /calendar) is available at:
+https://github.com/thingsinjars/jQTouch-Calendar
 
 HTML Export
 ===========
