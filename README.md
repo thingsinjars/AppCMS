@@ -9,28 +9,6 @@ Installation Procedure
  * Unzip onto your server
  * Upload /profiles/appcms
  * Run the Drupal installer, choosing AppCMS as the Installation Profile
- <!-- * Upload the modules listed in modules/modules-README.txt This includes two customised modules:
-   * html\_export - More thorough about changing src & href values
-   * jquery\_update - Uses standard jQuery for Admin area, includes jQuery from theme if it exists -->
-
-
-
-<!-- Install this standard theme
----------------------------
-  * Seven (http://drupal.org/project/seven)
-
-Install this custom theme
--------------------------
-  * AppCMS
-
-Use admin_theme to enable AppCMS as the default theme and Seven as the admin theme -->
-
-<!-- Module settings
----------------
-  * The jQuery Update module needs to be configured before use
-    * Visit: /admin/settings/jquery\_update\_appcms
-    * choose 'Minified' and save
- -->
 
 Structure
 =========
@@ -45,67 +23,57 @@ Home Page
 
 Navigation
 ----------
- <!-- * Change name of 'Primary Links' to 'Tab Bar'
- * Add the 'Tab Bar' block created by menu_block to the 'block' region
-   * Menu: Tab Bar
-   * Item: <root of Tab Bar>
-	 * Starting level: 2nd level (secondary)
-	 * √ Make the starting level follow the active menu item
-	 * Starting level will be: Children of active menu item
-	 * Maximum depth: 1 -->
+The 'Primary links' menu has been renamed 'Tab bar'. Nodes added as children of the tab bar will appear along the bottom of the screen. Four or five is a good number but any number can be handled. 
 
-
-Section navigation
-------------------
-  * Nodes added as of the top-level Tab Bar items will not be added to the tab bar but will be listed within those sections.
+Pages within the main sections will not be added to the tab bar but will be listed within those sections.
 
 Content
 =======
 
-These fields have been added to Page type
-----------------
- * Audio (field_audio)
-   * Upload audio to embed it in this page
-   * mp3, ogg, wav, m4a permitted
-   * Not required
-   * Maximum of 1
- * Video (field_video)
-   * Upload video to embed it in this page
-   * mp4, m4v, ogv, webm, mov permitted
-   * Not required
-   * Maximum of 1
- * Images (field_images)
-   * Upload images you would like to appear in your gallery
-   * jpg, png, gif, jpeg permitted
-   * Not required
-   * Unlimited
- * Icon (field_icon)
-   * Upload an icon to use in the Tab Bar. This is only required for the main sections.
-   * png permitted
-   * Not required
-   * Maximum of 1
+The 'Page' type now has extra fields:
+
+Audio
+-----
+  * Upload audio to embed it in this page
+  * mp3, ogg, wav, m4a permitted
+  * Not required
+  * Maximum of one per page
+
+Video
+-----
+  * Upload video to embed it in this page
+  * mp4, m4v, ogv, webm, mov permitted
+  * Not required
+  * Maximum of one per page
+
+Images
+------
+  * Upload images you would like to appear in a gallery
+  * jpg, png, gif, jpeg permitted
+  * Not required
+  * Any number per page
+
+Icon
+----
+  * Upload an icon to use in the tab bar. This is only required for the main sections.
+  * There are sample icons in the /profiles/appcms/themes/appcms/images directory
+  * png permitted
+  * Not required
+  * Maximum of one per page
 
 Custom Formatters
 -----------------
-
-The custom formatters listed in custom_formatters/*.php have been installed
+Custom display types have been added for the audio, video and image gallery presentation
 
 Content Types
 -------------
- * Event
-   * Standard content with a title & a date field called field_date
+An 'Event' type has been added. This has a title and a date field. Any events created (/node/add/event) will appear in the Calendar.
 
 View
 ----
-Set up the custom Calendar View by importing events_list.view
+A calendar has been created and made available at /calendar. This will display an iCal-like calendar which includes any 'events' content. It has been added to the menu but can be removed if not needed (/admin/build/menu-customize/primary-links).
 
-Events
-------
-  * There is already a Tab Bar menu item (/admin/build/menu-customize/primary-links) pointing to the URL 'calendar' (created in Views)
-  * This will display an iCal-like calendar which includes any 'events' content.
-  * Add events (/node/add/event)
-
-The most recent code for the plugin behind the events calendar (available at /calendar) is available at:
+The most recent code for the plugin behind the events calendar is available at:
 https://github.com/thingsinjars/jQTouch-Calendar
 
 HTML Export

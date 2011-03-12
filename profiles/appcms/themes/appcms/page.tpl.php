@@ -1,9 +1,11 @@
       <div id="node<?php echo $node->nid; ?>" class="s-pane">
-        <div class="toolbar">
-          <h1><?php if($title) { echo $title; } ?></h1>
+<?php if($title) { ?>
+	      <div class="toolbar">
+          <h1><?php echo $title; ?></h1>
           <?php // If this page has a parent that isn't level 1, draw a back button
 							if (appcms_menu_depth() != 1) {?>          <a href="<?php print base_path(); ?>" class="back">Back</a><?php	}; ?>
         </div>
+<?php } ?>
         <section id="content-<?php echo $node->nid; ?>" class="s-scrollwrapper">
           <div id="contentpane-<?php echo $node->nid; ?>" class="s-scrollpane">
             <article>
