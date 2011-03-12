@@ -1,0 +1,246 @@
+/*
+
+*************************************
+This file is for the bars extension
+by Datazombies. Download it from:
+http://github.com/DataZombies/jQTouch
+
+Then put this file in 
+"extensions/jqt.bars" and use it as 
+a replacement for "jqt.bars.css" in
+"index.html"
+
+Don't include this file when you're
+not using the bars extension.
+
+More information on:
+http://www.theartspot.be/blog/2010/12/08/jqtouch-theme/
+**************************************
+
+iPhone Guidelines - full screen
+                 Portrait  Landscape
+Status Bar.......       20px         No change in heigth due to orientation.
+Address Bar......  60px      60px    Only in Mobile Safari
+Navigation Bar...  44px      32px
+Tool Bar.........  44px      32px
+Tab Bar..........       49px         No change in heigth due to orientation.
+
+Screen 320 x 480 or 640 x 960 for high resolution
+----------------------------------------
+iPad Guidelines
+                       Portrait &
+                       Landscape
+Status Bar.............  20px
+Navigation in Safari...  58px     Seems to be the only exception in built-in app
+Navigation.............  44px
+Tool Bar...............  44px
+Tab Bar................  49px
+
+Screen 768 x 1024
+
+Source: BeeDesk & http://developer.apple.com/library/ios/#documentation/general/conceptual/ipadhig/designguidelines/designguidelines.html
+
+*/
+
+* {outline: none !important;}
+
+.s-scrollwrapper {
+  z-index: 5;
+  background-color: #333;
+}
+
+.s-scrollpane {
+  background-image: -webkit-gradient(linear, left top, left bottom,from(rgba(255,255,255,0.9)));
+  overflow: hidden;
+}
+
+.s-scrollpane::before {
+  background: red;
+}
+
+#jqt ul.plastic .s-scrollpane {
+  background: rgba(255,255,255,0)
+}
+
+/* @group #tabbar */
+
+#tabbar div, #tabbar a, #tabbar small, #tabbar strong, #tabbar ul,
+#tabbar li, #tabbar table, #tabbar tr, #tabbar td {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+#tabbar {
+  -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.3);
+  bottom: 0;      /* build the tabbar off screen */
+  display: none;  /* build the tabbar off screen */
+  height: 3.0625em  !important;
+	overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#tabbar #tabbar-pane, #tabbar ul, #tabbar li,
+#tabbar table, #tabbar tr, #tabbar td {
+  height: auto;
+}
+
+#tabbar #tabbar-pane, {
+  bottom: 0;
+  float:left;
+}
+
+#tabbar table, #tabbar ul {
+  display: inline-table;
+  margin-top: .1875em;
+}
+
+#tabbar li, #tabbar td {
+  display: inline-table;
+  min-width: 3.33333em;
+}
+
+#tabbar a {
+  border-radius: .25em;
+  bottom: 0;
+  display: inline-block;
+  height: 2.75em;
+  position: relative;
+  top: 0;
+  vertical-align: top;
+  width: 100%;
+}
+
+#tabbar a > strong {
+  -webkit-font-smoothing: antialiased;
+  bottom: 0;
+  color: rgba(0,0,0,0.4);
+  font: bold .625em "Helvetica Neue", Helvetica;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  white-space: nowrap;
+  width: 100%;
+}
+
+#tabbar a::after, #tabbar a::before {
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  bottom: .875em;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#tabbar a::before {
+  background-image: rbga(0,0,0,0.4);
+  z-index: 1;
+}
+
+#tabbar a.enabled::before {
+  background: white;
+}
+
+#tabbar a::after {
+  z-index: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+#tabbar a.enabled, #tabbar a.active {
+  background-color: rgba(0,0,0,.15);
+}
+
+#tabbar a.enabled > strong {
+  color: #FFF;
+}
+
+#tabbar a.enabled::before {
+/* defined in extension themes */
+}
+
+#tabbar a.XX::after, #tabbar a.XX::before {
+/* dynamically build in jqt.bars.js */
+}
+
+/* @group badge for tabbar */
+
+#tabbar .badge {
+  -webkit-box-shadow: 0 0 .3125em rgba(0, 0, 0, 1.0);
+  -webkit-border-radius: .8125em;
+  background-color: white;
+/*   border: .25em solid #fff; */
+  display: block;
+  font: bold .72em "Helvetica Neue", Helvetica;
+  height: 1.1em;
+  line-height: 1em;
+  min-width: .5em;
+  overflow: hidden;
+  padding: .125em .375em;
+  position: absolute;
+  text-shadow: 0px -1em 1em rgba(0, 0, 0, 0.3);
+  top: 0;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+#tabbar .badge.left {
+  left: auto;
+  right: 55%;
+}
+
+#tabbar .badge.right {
+  left: 55%;
+  right: auto;
+}
+
+/* @end */
+/* @end */
+
+/* @group .tabbar */
+
+.tabbar div, .tabbar a, .tabbar small, .tabbar strong, .tabbar ul,
+.tabbar li, .tabbar table, .tabbar tr, .tabbar td {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tabbar {
+  -webkit-box-shadow: 0 -0.05em 0 rgba(0,0,0,0.9);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2c2f34), to(#6d84a2), color-stop(.01, #2c2f34),
+    color-stop(.02, #d8dee6), color-stop(.03, #b0bccd), color-stop(.5, #899bb4), color-stop(.51, #8195af));
+  /* bottom: 0; */      /* build the tabbar off screen*/ 
+  /* display: none; */  /* build the tabbar off screen */
+  max-height: 2.75em  !important;
+  min-height: 2em  !important;
+	overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+/* @end */

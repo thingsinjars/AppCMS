@@ -5,13 +5,13 @@
     <title><?php print $head_title ?></title>
     <!-- These must come from a setting somewhere -->
     <!--57px at 163dpi - iPhone 3G / 3GS - iOS before 4.2, uses CSS Media Queries-->
-    <link rel="apple-touch-icon-precomposed" media="screen and (resolution: 163dpi)" href="/templates/mobile/icon.png" />
+    <link rel="apple-touch-icon-precomposed" media="screen and (resolution: 163dpi)" href="/themes/appcms/images/icon.png" />
     <!--72px at 132dpi for iPad v1, before 4.2-->
-    <link rel="apple-touch-icon-precomposed" media="screen and (resolution: 132dpi)" href="/templates/mobile/icon-72.png" />
+    <link rel="apple-touch-icon-precomposed" media="screen and (resolution: 132dpi)" href="/themes/appcms/images/icon-72.png" />
     <!--114px at 326dpi for iPhone 4, before 4.2-->
-    <link rel="apple-touch-icon-precomposed" media="screen and (-webkit-min-device-pixel-ratio: 2)" href="/templates/mobile/icon@2x.png" />
+    <link rel="apple-touch-icon-precomposed" media="screen and (-webkit-min-device-pixel-ratio: 2)" href="/themes/appcms/images/icon@2x.png" />
 
-    <link rel="apple-touch-startup-image" href="/templates/mobile/startup.png" />
+    <link rel="apple-touch-startup-image" href="/themes/appcms/images/startup.png" />
 
     <?php print $styles ?>
 
@@ -42,8 +42,15 @@ if(!$logo) {
         if(!empty($primary_links)) {
           $out = '<ul>'."\n";
           foreach($primary_links as $link_name => $link) {
-						$this_item = menu_get_item($link['href']);
-            $out .= '<li><a href="' . $link['href'] . '" mask="'. $this_item['page_arguments'][0]->field_icon[0]['filepath'] .'" animation="fade"><strong>' . $link['title']  . '</strong></a></li>'."\n";
+            $this_item = menu_get_item($link['href']);
+            if(is_array($this_item['page_arguments'][0]->field_icon)) {
+              $icon = $this_item['page_arguments'][0]->field_icon[0]['filepath'];
+            } else {
+              if($this_item['page_arguments'][0] == 'events_list') {
+                $icon = '/themes/appcms/images/events.png';
+              }
+            }
+            $out .= '<li><a href="' . $link['href'] . '" mask="'. $icon .'" animation="fade"><strong>' . $link['title']  . '</strong></a></li>'."\n";
           }
           $out .= '</ul>'."\n";
           echo $out;

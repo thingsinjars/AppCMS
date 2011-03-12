@@ -1,0 +1,845 @@
+TAppCMS
+v7
+r0
+t317865402.396702
+cCheck dependencies
+cProcessInfoPlistFile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/Info.plist AppCMS-Info.plist
+cPhaseScriptExecution "Copy PhoneGap Javascript" /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Script-30E9A9A110B758320022D3BA.sh
+cPhaseScriptExecution "Touch www folder" /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Script-304B58A110DAC018002A0835.sh
+cCpResource build/Debug-iphonesimulator/AppCMS.app/www www
+cCpResource build/Debug-iphonesimulator/AppCMS.app/VERSION /Users/simonmadine/Documents/PhoneGapLib/VERSION
+cCpResource build/Debug-iphonesimulator/AppCMS.app/Default.png Default.png
+cCpResource build/Debug-iphonesimulator/AppCMS.app/icon.png icon.png
+cCopyPlistFile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/PhoneGap.plist PhoneGap.plist
+cCpResource build/Debug-iphonesimulator/AppCMS.app/PhoneGapBuildSettings.xcconfig PhoneGapBuildSettings.xcconfig
+cCpResource build/Debug-iphonesimulator/AppCMS.app/icon-72.png icon-72.png
+cCpResource build/Debug-iphonesimulator/AppCMS.app/icon@2x.png icon@2x.png
+cCpResource build/Debug-iphonesimulator/AppCMS.app/Default-Landscape.png Default-Landscape.png
+cCpResource build/Debug-iphonesimulator/AppCMS.app/Default-Portrait.png Default-Portrait.png
+cCopyPlistFile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS-Info.plist AppCMS-Info.plist
+cProcessPCH /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppCMSPrefix-eiibhitbaxtacfgutgjxszvilmdp/AppCMSPrefix.pch.gch AppCMSPrefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/main.o /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/AppCMSAppDelegate.o /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Classes/AppCMSAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS normal i386
+cGenerateDSYMFile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app.dSYM /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS
+cTouch /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004CC1288A00000000000F34A0
+t1287727242
+s996512
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.h
+c000000004CC128840000000000000733
+t1287727236
+s1843
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+c000000004CC122E10000000000075FE0
+t1287725793
+s483296
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AddressBook.framework/Headers/ABAddressBook.h
+c000000004CC122DB0000000000000A8C
+t1287725787
+s2700
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
+c000000004CC129090000000000151F20
+t1287727369
+s1384224
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AddressBookUI.framework/Headers/AddressBookUI.h
+c000000004CC128F80000000000000202
+t1287727352
+s514
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004CC1224600000000001EA9C0
+t1287725638
+s2009536
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioServices.h
+c000000004CC1222F0000000000010AAC
+t1287725615
+s68268
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000004CC1224400000000001C3D40
+t1287725636
+s1850688
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004CC127E80000000000074190
+t1287727080
+s475536
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h
+c000000004CC127DD00000000000001D0
+t1287727069
+s464
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c000000004CC6569800000000001AAD60
+t1288066712
+s1748320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000004CC122D0000000000005BF20
+t1287725776
+s376608
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004CC12431000000000015CDB0
+t1287726129
+s1428912
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000004CC121F60000000000068970
+t1287725558
+s428400
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UINavigationController.h
+c000000004CC1282000000000000019AC
+t1287727136
+s6572
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/Contacts.h
+c000000004D1126800000000000000ACE
+t1292969600
+s2766
+i<Foundation/Foundation.h>
+i<AddressBook/ABAddressBook.h>
+i<AddressBookUI/AddressBookUI.h>
+i"PhoneGapCommand.h"
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/DebugConsole.h
+c000000004D1126800000000000000170
+t1292969600
+s368
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i"PhoneGapCommand.h"
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/JSON/JSON.h
+c000000004D11268000000000000008F9
+t1292969600
+s2297
+i"SBJSON.h"
+i"NSObject+SBJSON.h"
+i"NSString+SBJSON.h"
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/JSON/NSObject+SBJSON.h
+c000000004D1126800000000000000A01
+t1292969600
+s2561
+i<Foundation/Foundation.h>
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/JSON/NSString+SBJSON.h
+c000000004D1126800000000000000916
+t1292969600
+s2326
+i<Foundation/Foundation.h>
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/JSON/SBJSON.h
+c000000004D1126800000000000000AED
+t1292969600
+s2797
+i<Foundation/Foundation.h>
+i"SBJsonParser.h"
+i"SBJsonWriter.h"
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/JSON/SBJsonBase.h
+c000000004D1126800000000000000B82
+t1292969600
+s2946
+i<Foundation/Foundation.h>
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/JSON/SBJsonParser.h
+c000000004D1126800000000000000C0B
+t1292969600
+s3083
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/JSON/SBJsonWriter.h
+c000000004D1126800000000000001140
+t1292969600
+s4416
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/Location.h
+c000000004D11268000000000000005D0
+t1292969600
+s1488
+i<UIKit/UIKit.h>
+i<CoreLocation/CoreLocation.h>
+i"PhoneGapCommand.h"
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/PhoneGapCommand.h
+c000000004D11268000000000000002ED
+t1292969600
+s749
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/PhoneGapDelegate.h
+c000000004D1126800000000000000848
+t1292969600
+s2120
+i<UIKit/UIKit.h>
+i<CoreLocation/CoreLocation.h>
+i<UIKit/UINavigationController.h>
+i"JSON/JSON.h"
+i"Location.h"
+i"Sound.h"
+i"Contacts.h"
+i"DebugConsole.h"
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/PhoneGapViewController.h
+c000000004D11268000000000000002F6
+t1292969600
+s758
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/simonmadine/Documents/PhoneGapLib/Classes/Sound.h
+c000000004D1126800000000000000704
+t1292969600
+s1796
+i<Foundation/Foundation.h>
+i<AudioToolbox/AudioServices.h>
+i<AVFoundation/AVFoundation.h>
+i"PhoneGapCommand.h"
+
+N/Users/simonmadine/Documents/PhoneGapLib/VERSION
+c000000004D1126800000000000000005
+t1292969600
+s5
+
+N/Users/simonmadine/Documents/PhoneGapLib/build/Debug-iphonesimulator/libPhoneGapLib.a
+c000000004D3B58370000000000122B08
+t1295734839
+s1190664
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/AppCMS-Info.plist
+c000000004D3B578A00000000000005C6
+t1295734666
+s1478
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/AppCMSPrefix.pch
+c000000004D11268000000000000000CB
+t1292969600
+s203
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Classes/AppCMSAppDelegate.h
+c000000004D3B57880000000000000120
+t1295734664
+s288
+i<UIKit/UIKit.h>
+i"PhoneGapDelegate.h"
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Classes/AppCMSAppDelegate.m
+c000000004D3B5789000000000000080D
+t1295734665
+s2061
+i"AppCMSAppDelegate.h"
+i"PhoneGapViewController.h"
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default-Landscape.png
+c000000004D112680000000000000154E
+t1292969600
+s5454
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default-Portrait.png
+c000000004D11268000000000000016C0
+t1292969600
+s5824
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default.png
+c000000004D1126800000000000000BAE
+t1292969600
+s2990
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/PhoneGap.plist
+c000000004D1126800000000000000167
+t1292969600
+s359
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/PhoneGapBuildSettings.xcconfig
+c000000004D1126800000000000000089
+t1292969600
+s137
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/___PROJECTNAMEASIDENTIFIER____Prefix.pch
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/AppCMS.LinkFileList
+c000000004D3B588A0000000000000139
+t1295734922
+s313
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/AppCMSAppDelegate.o
+t1295734924
+s49176
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/___PROJECTNAME___.LinkFileList
+c000000004D3B58370000000000000139
+t1295734839
+s313
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/main.o
+t1295734924
+s6544
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Script-304B58A110DAC018002A0835.sh
+c000000004D3B58370000000000000027
+t1295734839
+s39
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Script-30E9A9A110B758320022D3BA.sh
+c000000004D3B583700000000000000BE
+t1295734839
+s190
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app
+t1296172602
+s544
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app.dSYM
+t1295734925
+s102
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS
+t1295734925
+s293404
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS-Info.plist
+t1295734923
+s810
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/Default-Landscape.png
+t1295734923
+s5454
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/Default-Portrait.png
+t1295734923
+s5824
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/Default.png
+t1295734923
+s2990
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/Info.plist
+t1295734923
+s936
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/PhoneGap.plist
+t1295734923
+s145
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/PhoneGapBuildSettings.xcconfig
+t1295734923
+s137
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/PkgInfo
+t1295734923
+s8
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/VERSION
+t1295734923
+s5
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/icon-72.png
+t1295734923
+s5049
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/icon.png
+t1295734923
+s3126
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/icon@2x.png
+t1295734923
+s5340
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/www
+t1296172602
+s646
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app
+t1295734840
+s442
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app.dSYM
+t2
+s0
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/AppCMS-Info.plist
+t1295734840
+s810
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/Default-Landscape.png
+t1295734840
+s5454
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/Default-Portrait.png
+t1295734840
+s5824
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/Default.png
+t1295734840
+s2990
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/Info.plist
+t2
+s0
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/PhoneGap.plist
+t1295734840
+s145
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/PhoneGapBuildSettings.xcconfig
+t1295734840
+s137
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/PkgInfo
+t2
+s0
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/VERSION
+t1295734840
+s5
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/___PROJECTNAME___
+t2
+s0
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/icon-72.png
+t1295734840
+s5049
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/icon.png
+t1295734840
+s3126
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/icon@2x.png
+t1295734840
+s5340
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/www
+t1295734840
+s136
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon-72.png
+c000000004D11268000000000000013B9
+t1292969600
+s5049
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon.png
+c000000004D1126800000000000000C36
+t1292969600
+s3126
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon@2x.png
+c000000004D11268000000000000014DC
+t1292969600
+s5340
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/main.m
+c000000004D3B57870000000000000198
+t1295734663
+s408
+i<UIKit/UIKit.h>
+
+N/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/www
+c000000004D42063A00000000000002A8
+t1296172602
+s680
+
+N/var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppCMSPrefix-eiibhitbaxtacfgutgjxszvilmdp/AppCMSPrefix.pch.gch
+t1295734924
+s15477968
+
+N/var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/___PROJECTNAMEASIDENTIFIER____Prefix-aehcwkovsgprkehbwukadjpkfnca/___PROJECTNAMEASIDENTIFIER____Prefix.pch.gch
+t2
+s0
+
+NAppCMS-Info.plist
+c000000004D3B578A00000000000005C6
+t1295734666
+s1478
+
+N___PROJECTNAMEASIDENTIFIER___-Info.plist
+c00000000000000000000000000000000
+t2
+s0
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies317865401#317865401#0(113"[WARN]Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'AppCMS-Info.plist'.1(22@106"Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'AppCMS-Info.plist'.317865401#18446744073709551615#0#0(1@0"0(0#1#0"32370056120631408#0"0#
+
+CCompileC build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/AppCMSAppDelegate.o /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Classes/AppCMSAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s317427724.526971
+e317427724.636096
+r1
+xCompileC
+xbuild/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/AppCMSAppDelegate.o
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Classes/AppCMSAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@104"Compile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Classes/AppCMSAppDelegate.m317427724#317427724#0(0"0(0#0#96"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Classes/AppCMSAppDelegate.m8610030560#2435"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-generated-files.hmap -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-own-target-headers.hmap -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-all-target-headers.hmap -iquote /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-project-headers.hmap -F/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator -iquote/Users/simonmadine/Documents/PhoneGapLib/Classes/JSON -iquote/Users/simonmadine/Documents/PhoneGapLib/Classes -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/include -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources/i386 -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources -include /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppCMSPrefix-eiibhitbaxtacfgutgjxszvilmdp/AppCMSPrefix.pch -c /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Classes/AppCMSAppDelegate.m -o /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/AppCMSAppDelegate.o0#
+
+CCompileC build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/main.o /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s317427724.525883
+e317427724.577595
+r1
+xCompileC
+xbuild/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/main.o
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@83"Compile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/main.m317427724#317427724#0(0"0(0#0#75"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/main.m8610224608#2401"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-generated-files.hmap -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-own-target-headers.hmap -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-all-target-headers.hmap -iquote /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-project-headers.hmap -F/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator -iquote/Users/simonmadine/Documents/PhoneGapLib/Classes/JSON -iquote/Users/simonmadine/Documents/PhoneGapLib/Classes -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/include -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources/i386 -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources -include /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppCMSPrefix-eiibhitbaxtacfgutgjxszvilmdp/AppCMSPrefix.pch -c /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/main.m -o /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/main.o0#
+
+CCopyPlistFile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS-Info.plist AppCMS-Info.plist
+s317427723.871420
+e317427723.897047
+r1
+xCopyPlistFile
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS-Info.plist
+xAppCMS-Info.plist
+lSLF07#2@22"Copy AppCMS-Info.plist317427723#317427723#0(0"0(0#0#86"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/AppCMS-Info.plist8613925184#513"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 AppCMS-Info.plist --outdir /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app0#
+
+CCopyPlistFile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/PhoneGap.plist PhoneGap.plist
+s317427723.859515
+e317427723.891858
+r1
+xCopyPlistFile
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/PhoneGap.plist
+xPhoneGap.plist
+lSLF07#2@19"Copy PhoneGap.plist317427723#317427723#0(0"0(0#0#83"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/PhoneGap.plist8606553376#510"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 PhoneGap.plist --outdir /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app0#
+
+CCopyPlistFile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/AppCMS-Info.plist AppCMS-Info.plist
+s317427640.541795
+e317427640.706130
+r1
+xCopyPlistFile
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/AppCMS-Info.plist
+xAppCMS-Info.plist
+lSLF07#2@22"Copy AppCMS-Info.plist317427640#317427640#0(0"0(0#0#86"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/AppCMS-Info.plist8604372096#524"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 AppCMS-Info.plist --outdir /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app0#
+
+CCopyPlistFile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/PhoneGap.plist PhoneGap.plist
+s317427640.519850
+e317427640.705890
+r1
+xCopyPlistFile
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/PhoneGap.plist
+xPhoneGap.plist
+lSLF07#2@19"Copy PhoneGap.plist317427640#317427640#0(0"0(0#0#83"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/PhoneGap.plist8605941952#521"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 PhoneGap.plist --outdir /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app0#
+
+CCpResource build/Debug-iphonesimulator/AppCMS.app/Default-Landscape.png Default-Landscape.png
+s317427723.867718
+e317427723.880053
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/AppCMS.app/Default-Landscape.png
+xDefault-Landscape.png
+lSLF07#2@26"Copy Default-Landscape.png317427723#317427723#0(0"0(0#0#90"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default-Landscape.png8614193632#630"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default-Landscape.png /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app0#
+
+CCpResource build/Debug-iphonesimulator/AppCMS.app/Default-Portrait.png Default-Portrait.png
+s317427723.869563
+e317427723.880629
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/AppCMS.app/Default-Portrait.png
+xDefault-Portrait.png
+lSLF07#2@25"Copy Default-Portrait.png317427723#317427723#0(0"0(0#0#89"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default-Portrait.png8614107520#629"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default-Portrait.png /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app0#
+
+CCpResource build/Debug-iphonesimulator/AppCMS.app/Default.png Default.png
+s317427723.858075
+e317427723.864120
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/AppCMS.app/Default.png
+xDefault.png
+lSLF07#2@16"Copy Default.png317427723#317427723#0(0"0(0#0#80"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default.png8609476064#620"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default.png /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app0#
+
+CCpResource build/Debug-iphonesimulator/AppCMS.app/PhoneGapBuildSettings.xcconfig PhoneGapBuildSettings.xcconfig
+s317427723.864223
+e317427723.876633
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/AppCMS.app/PhoneGapBuildSettings.xcconfig
+xPhoneGapBuildSettings.xcconfig
+lSLF07#2@35"Copy PhoneGapBuildSettings.xcconfig317427723#317427723#0(0"0(0#0#99"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/PhoneGapBuildSettings.xcconfig8604454976#639"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/PhoneGapBuildSettings.xcconfig /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app0#
+
+CCpResource build/Debug-iphonesimulator/AppCMS.app/VERSION /Users/simonmadine/Documents/PhoneGapLib/VERSION
+s317427723.857338
+e317427723.863007
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/AppCMS.app/VERSION
+x/Users/simonmadine/Documents/PhoneGapLib/VERSION
+lSLF07#2@53"Copy /Users/simonmadine/Documents/PhoneGapLib/VERSION317427723#317427723#0(0"0(0#0#48"/Users/simonmadine/Documents/PhoneGapLib/VERSION8611122400#588"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Documents/PhoneGapLib/VERSION /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app0#
+
+CCpResource build/Debug-iphonesimulator/AppCMS.app/icon-72.png icon-72.png
+s317427723.865068
+e317427723.873786
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/AppCMS.app/icon-72.png
+xicon-72.png
+lSLF07#2@16"Copy icon-72.png317427723#317427723#0(0"0(0#0#80"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon-72.png8600882976#620"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon-72.png /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app0#
+
+CCpResource build/Debug-iphonesimulator/AppCMS.app/icon.png icon.png
+s317427723.858780
+e317427723.873955
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/AppCMS.app/icon.png
+xicon.png
+lSLF07#2@13"Copy icon.png317427723#317427723#0(0"0(0#0#77"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon.png8608479680#617"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon.png /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app0#
+
+CCpResource build/Debug-iphonesimulator/AppCMS.app/icon@2x.png icon@2x.png
+s317427723.865905
+e317427723.877950
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/AppCMS.app/icon@2x.png
+xicon@2x.png
+lSLF07#2@16"Copy icon@2x.png317427723#317427723#0(0"0(0#0#80"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon@2x.png8614448320#620"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon@2x.png /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app0#
+
+CCpResource build/Debug-iphonesimulator/AppCMS.app/www www
+s317865402.060343
+e317865402.389870
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/AppCMS.app/www
+xwww
+lSLF07#2@8"Copy www317865402#317865402#0(0"0(0#0#72"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/www8601031264#612"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/www /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app0#
+
+CCpResource build/Debug-iphonesimulator/___PROJECTNAME___.app/Default-Landscape.png Default-Landscape.png
+s317427640.540380
+e317427640.562080
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/___PROJECTNAME___.app/Default-Landscape.png
+xDefault-Landscape.png
+lSLF07#2@26"Copy Default-Landscape.png317427640#317427640#0(0"0(0#0#90"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default-Landscape.png8604480352#641"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default-Landscape.png /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app0#
+
+CCpResource build/Debug-iphonesimulator/___PROJECTNAME___.app/Default-Portrait.png Default-Portrait.png
+s317427640.541080
+e317427640.559956
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/___PROJECTNAME___.app/Default-Portrait.png
+xDefault-Portrait.png
+lSLF07#2@25"Copy Default-Portrait.png317427640#317427640#0(0"0(0#0#89"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default-Portrait.png8604440448#640"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default-Portrait.png /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app0#
+
+CCpResource build/Debug-iphonesimulator/___PROJECTNAME___.app/Default.png Default.png
+s317427640.518531
+e317427640.538061
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/___PROJECTNAME___.app/Default.png
+xDefault.png
+lSLF07#2@16"Copy Default.png317427640#317427640#0(0"0(0#0#80"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default.png8606043488#631"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/Default.png /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app0#
+
+CCpResource build/Debug-iphonesimulator/___PROJECTNAME___.app/PhoneGapBuildSettings.xcconfig PhoneGapBuildSettings.xcconfig
+s317427640.538155
+e317427640.547682
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/___PROJECTNAME___.app/PhoneGapBuildSettings.xcconfig
+xPhoneGapBuildSettings.xcconfig
+lSLF07#2@35"Copy PhoneGapBuildSettings.xcconfig317427640#317427640#0(0"0(0#0#99"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/PhoneGapBuildSettings.xcconfig8605881376#650"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/PhoneGapBuildSettings.xcconfig /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app0#
+
+CCpResource build/Debug-iphonesimulator/___PROJECTNAME___.app/VERSION /Users/simonmadine/Documents/PhoneGapLib/VERSION
+s317427640.517808
+e317427640.537912
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/___PROJECTNAME___.app/VERSION
+x/Users/simonmadine/Documents/PhoneGapLib/VERSION
+lSLF07#2@53"Copy /Users/simonmadine/Documents/PhoneGapLib/VERSION317427640#317427640#0(0"0(0#0#48"/Users/simonmadine/Documents/PhoneGapLib/VERSION8600143200#599"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Documents/PhoneGapLib/VERSION /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app0#
+
+CCpResource build/Debug-iphonesimulator/___PROJECTNAME___.app/icon-72.png icon-72.png
+s317427640.538983
+e317427640.559177
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/___PROJECTNAME___.app/icon-72.png
+xicon-72.png
+lSLF07#2@16"Copy icon-72.png317427640#317427640#0(0"0(0#0#80"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon-72.png8605736480#631"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon-72.png /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app0#
+
+CCpResource build/Debug-iphonesimulator/___PROJECTNAME___.app/icon.png icon.png
+s317427640.519094
+e317427640.537516
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/___PROJECTNAME___.app/icon.png
+xicon.png
+lSLF07#2@13"Copy icon.png317427640#317427640#0(0"0(0#0#77"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon.png8606003296#628"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon.png /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app0#
+
+CCpResource build/Debug-iphonesimulator/___PROJECTNAME___.app/icon@2x.png icon@2x.png
+s317427640.539673
+e317427640.561824
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/___PROJECTNAME___.app/icon@2x.png
+xicon@2x.png
+lSLF07#2@16"Copy icon@2x.png317427640#317427640#0(0"0(0#0#80"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon@2x.png8604572544#631"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/icon@2x.png /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app0#
+
+CCpResource build/Debug-iphonesimulator/___PROJECTNAME___.app/www www
+s317427640.517095
+e317427640.537754
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/___PROJECTNAME___.app/www
+xwww
+lSLF07#2@8"Copy www317427640#317427640#0(0"0(0#0#72"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/www8606174656#623"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/www /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app0#
+
+CGenerateDSYMFile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app.dSYM /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS
+s317427725.254056
+e317427725.355849
+r1
+xGenerateDSYMFile
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app.dSYM
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS
+lSLF07#2@106"GenerateDSYMFile build/Debug-iphonesimulator/AppCMS.app.dSYM build/Debug-iphonesimulator/AppCMS.app/AppCMS317427725#317427725#0(0"0(0#0#114"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS8610716800#532"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS -o /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app.dSYM0#
+
+CGenerateDSYMFile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app.dSYM /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/___PROJECTNAME___
+r0
+
+CLd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS normal i386
+s317427724.636199
+e317427725.253889
+r1
+xLd
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS
+xnormal
+xi386
+lSLF07#2@119"Link /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS317427724#317427725#0(0"0(0#0#0"8614135360#1457"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator -F/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator -filelist /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/AppCMS.LinkFileList -mmacosx-version-min=10.6 -all_load -Obj-C -Xlinker -objc_abi_version -Xlinker 2 /Users/simonmadine/Documents/PhoneGapLib/build/Debug-iphonesimulator/libPhoneGapLib.a -framework Foundation -framework UIKit -framework CoreGraphics -framework AddressBook -framework AddressBookUI -framework AudioToolbox -framework AVFoundation -framework CFNetwork -framework CoreLocation -framework MediaPlayer -framework QuartzCore -framework SystemConfiguration -framework MobileCoreServices -o /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/AppCMS0#
+
+CLd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/___PROJECTNAME___ normal i386
+r0
+
+CPhaseScriptExecution "Copy PhoneGap Javascript" /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Script-30E9A9A110B758320022D3BA.sh
+s317865401.398807
+e317865402.038140
+r1
+xPhaseScriptExecution
+xCopy PhoneGap Javascript
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Script-30E9A9A110B758320022D3BA.sh
+ojava -jar util/yuicompressor/yuicompressor-2.4.2.jar --nomunge --charset UTF-8 -o javascripts/phonegap.js javascripts/phonegap-uncompressed.js
+ocp /Users/simonmadine/Documents/PhoneGapLib/javascripts/phonegap.js /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/www/phonegap.js
+lSLF07#2@50"Run custom shell script 'Copy PhoneGap Javascript'317865401#317865402#0(296"java -jar util/yuicompressor/yuicompressor-2.4.2.jar --nomunge --charset UTF-8 -o javascripts/phonegap.js javascripts/phonegap-uncompressed.jscp /Users/simonmadine/Documents/PhoneGapLib/javascripts/phonegap.js /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/www/phonegap.js2(13@143"java -jar util/yuicompressor/yuicompressor-2.4.2.jar --nomunge --charset UTF-8 -o javascripts/phonegap.js javascripts/phonegap-uncompressed.js317865401#0#143#0(1@0"0(13@153"cp /Users/simonmadine/Documents/PhoneGapLib/javascripts/phonegap.js /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/www/phonegap.js317865402#143#153#0(1@0"0(0#0#0"8602382112#18819"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER simonmadine    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build    setenv BUILD_ROOT /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator    setenv CACHE_ROOT /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv COCOS2D_SOURCE /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/cocos2d-iphone    setenv CODESIGNING_FOLDER_PATH /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app    setenv CODE_SIGN_CONTEXT_CLASS XCCodeSignContext    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator    setenv CONFIGURATION_TEMP_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH AppCMS.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH AppCMS.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/AppCMS.dst    setenv DWARF_DSYM_FILE_NAME AppCMS.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn .git CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH AppCMS.app/Executables    setenv EXECUTABLE_FOLDER_PATH AppCMS.app    setenv EXECUTABLE_NAME AppCMS    setenv EXECUTABLE_PATH AppCMS.app/AppCMS    setenv FILE_LIST /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH AppCMS.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME AppCMS.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER AppCMSPrefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_VERSION_IDENTIFIER __2    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE AppCMS-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH AppCMS.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH AppCMS.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/AppCMS.dst/Users/simonmadine/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER simonmadine    setenv INSTALL_PATH /Users/simonmadine/Applications    setenv INSTALL_ROOT /tmp/AppCMS.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH AppCMS.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/AppCMS.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH AppCMS.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_VERSION_ACTUAL 1066    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0606    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal    setenv OBJROOT /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-all_load -Obj-C"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH AppCMS.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PHONEGAPLIB /Users/simonmadine/Documents/PhoneGapLib    setenv PKGINFO_FILE_PATH /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/PkgInfo    setenv PKGINFO_PATH AppCMS.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PRODUCT_BUILD_VERSION 8C134    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 40200    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH AppCMS.app/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH AppCMS.app/PrivateHeaders    setenv PRODUCT_NAME AppCMS    setenv PRODUCT_SETTINGS_PATH /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/AppCMS-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT AppCMS    setenv PROJECT_DERIVED_FILE_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/DerivedSources    setenv PROJECT_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PROJECT_FILE_PATH /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/AppCMS.xcodeproj    setenv PROJECT_NAME AppCMS    setenv PROJECT_TEMP_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build    setenv PUBLIC_HEADERS_FOLDER_PATH AppCMS.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH AppCMS.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk    setenv SDK_NAME iphonesimulator4.2    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH AppCMS.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH AppCMS.app/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv SRCROOT /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SYMBOL_REPOSITORY_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/SymbolRepositories    setenv SYMROOT /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME AppCMS    setenv TARGET_BUILD_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator    setenv TARGET_NAME AppCMS    setenv TARGET_TEMP_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build    setenv TEMP_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build    setenv TEMP_FILES_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build    setenv TEMP_FILE_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build    setenv TEMP_ROOT /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH AppCMS.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER simonmadine    setenv USER_APPS_DIR /Users/simonmadine/Applications    setenv USER_HEADER_SEARCH_PATHS "/Users/simonmadine/Documents/PhoneGapLib/Classes/JSON /Users/simonmadine/Documents/PhoneGapLib/Classes"    setenv USER_LIBRARY_DIR /Users/simonmadine/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH AppCMS.app/version.plist    setenv VERSION_INFO_BUILDER simonmadine    setenv VERSION_INFO_FILE AppCMS_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:AppCMS  PROJECT:AppCMS-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME AppCMS.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 10M2423    setenv XCODE_VERSION_ACTUAL 0325    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv _REAL_SDKROOT iphoneos    /bin/sh -c /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Script-30E9A9A110B758320022D3BA.sh0#
+
+CPhaseScriptExecution "Touch www folder" /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Script-304B58A110DAC018002A0835.sh
+s317865402.038222
+e317865402.059825
+r1
+xPhaseScriptExecution
+xTouch www folder
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Script-304B58A110DAC018002A0835.sh
+lSLF07#2@42"Run custom shell script 'Touch www folder'317865402#317865402#0(0"0(0#0#0"8601627936#18819"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER simonmadine    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build    setenv BUILD_ROOT /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator    setenv CACHE_ROOT /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv COCOS2D_SOURCE /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/cocos2d-iphone    setenv CODESIGNING_FOLDER_PATH /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app    setenv CODE_SIGN_CONTEXT_CLASS XCCodeSignContext    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator    setenv CONFIGURATION_TEMP_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH AppCMS.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH AppCMS.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/AppCMS.dst    setenv DWARF_DSYM_FILE_NAME AppCMS.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn .git CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH AppCMS.app/Executables    setenv EXECUTABLE_FOLDER_PATH AppCMS.app    setenv EXECUTABLE_NAME AppCMS    setenv EXECUTABLE_PATH AppCMS.app/AppCMS    setenv FILE_LIST /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH AppCMS.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME AppCMS.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER AppCMSPrefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_VERSION_IDENTIFIER __2    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE AppCMS-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH AppCMS.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH AppCMS.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/AppCMS.dst/Users/simonmadine/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER simonmadine    setenv INSTALL_PATH /Users/simonmadine/Applications    setenv INSTALL_ROOT /tmp/AppCMS.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH AppCMS.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal/i386/AppCMS.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH AppCMS.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_VERSION_ACTUAL 1066    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0606    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Objects-normal    setenv OBJROOT /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-all_load -Obj-C"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH AppCMS.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PHONEGAPLIB /Users/simonmadine/Documents/PhoneGapLib    setenv PKGINFO_FILE_PATH /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/PkgInfo    setenv PKGINFO_PATH AppCMS.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PRODUCT_BUILD_VERSION 8C134    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 40200    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH AppCMS.app/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH AppCMS.app/PrivateHeaders    setenv PRODUCT_NAME AppCMS    setenv PRODUCT_SETTINGS_PATH /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/AppCMS-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT AppCMS    setenv PROJECT_DERIVED_FILE_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/DerivedSources    setenv PROJECT_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PROJECT_FILE_PATH /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/AppCMS.xcodeproj    setenv PROJECT_NAME AppCMS    setenv PROJECT_TEMP_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build    setenv PUBLIC_HEADERS_FOLDER_PATH AppCMS.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH AppCMS.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk    setenv SDK_NAME iphonesimulator4.2    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH AppCMS.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH AppCMS.app/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv SRCROOT /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SYMBOL_REPOSITORY_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/SymbolRepositories    setenv SYMROOT /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME AppCMS    setenv TARGET_BUILD_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator    setenv TARGET_NAME AppCMS    setenv TARGET_TEMP_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build    setenv TEMP_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build    setenv TEMP_FILES_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build    setenv TEMP_FILE_DIR /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build    setenv TEMP_ROOT /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH AppCMS.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER simonmadine    setenv USER_APPS_DIR /Users/simonmadine/Applications    setenv USER_HEADER_SEARCH_PATHS "/Users/simonmadine/Documents/PhoneGapLib/Classes/JSON /Users/simonmadine/Documents/PhoneGapLib/Classes"    setenv USER_LIBRARY_DIR /Users/simonmadine/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH AppCMS.app/version.plist    setenv VERSION_INFO_BUILDER simonmadine    setenv VERSION_INFO_FILE AppCMS_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:AppCMS  PROJECT:AppCMS-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME AppCMS.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 10M2423    setenv XCODE_VERSION_ACTUAL 0325    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv _REAL_SDKROOT iphoneos    /bin/sh -c /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/Script-304B58A110DAC018002A0835.sh0#
+
+CProcessInfoPlistFile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/Info.plist AppCMS-Info.plist
+s317427723.002452
+e317427723.006337
+r1
+xProcessInfoPlistFile
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/Info.plist
+xAppCMS-Info.plist
+lSLF07#2@25"Process AppCMS-Info.plist317427723#317427723#0(0"0(0#0#86"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/AppCMS-Info.plist8606202336#628"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility AppCMS-Info.plist -genpkginfo /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/Info.plist AppCMS-Info.plist
+r0
+
+CProcessInfoPlistFile /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/Info.plist ___PROJECTNAMEASIDENTIFIER___-Info.plist
+s317427639.719670
+e317427639.723634
+r0
+xProcessInfoPlistFile
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/Info.plist
+x___PROJECTNAMEASIDENTIFIER___-Info.plist
+lSLF07#2@48"Process ___PROJECTNAMEASIDENTIFIER___-Info.plist317427639#317427639#0(253"error: could not read data from '/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/___PROJECTNAMEASIDENTIFIER___-Info.plist': The file “___PROJECTNAMEASIDENTIFIER___-Info.plist” couldn’t be opened because there is no such file.1(4@245"could not read data from '/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/___PROJECTNAMEASIDENTIFIER___-Info.plist': The file “___PROJECTNAMEASIDENTIFIER___-Info.plist” couldn’t be opened because there is no such file.317427639#18446744073709551615#0#0(6@0"317427639#0#0#0#0#0"0(0#0#109"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/___PROJECTNAMEASIDENTIFIER___-Info.plist31244220637446252#673"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility ___PROJECTNAMEASIDENTIFIER___-Info.plist -genpkginfo /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app/Info.plist1#
+
+CProcessPCH /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppCMSPrefix-eiibhitbaxtacfgutgjxszvilmdp/AppCMSPrefix.pch.gch AppCMSPrefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s317427723.897195
+e317427724.524592
+r1
+xProcessPCH
+x/var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppCMSPrefix-eiibhitbaxtacfgutgjxszvilmdp/AppCMSPrefix.pch.gch
+xAppCMSPrefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@27"Precompile AppCMSPrefix.pch317427723#317427724#0(0"0(0#0#85"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/AppCMSPrefix.pch8613645504#2263"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-generated-files.hmap -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-own-target-headers.hmap -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-all-target-headers.hmap -iquote /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/AppCMS-project-headers.hmap -F/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator -iquote/Users/simonmadine/Documents/PhoneGapLib/Classes/JSON -iquote/Users/simonmadine/Documents/PhoneGapLib/Classes -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/include -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources/i386 -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources -c /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/AppCMSPrefix.pch -o /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppCMSPrefix-eiibhitbaxtacfgutgjxszvilmdp/AppCMSPrefix.pch.gch0#
+
+CProcessPCH /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/___PROJECTNAMEASIDENTIFIER____Prefix-aehcwkovsgprkehbwukadjpkfnca/___PROJECTNAMEASIDENTIFIER____Prefix.pch.gch ___PROJECTNAMEASIDENTIFIER____Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s317427640.706265
+e317427640.711390
+r0
+xProcessPCH
+x/var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/___PROJECTNAMEASIDENTIFIER____Prefix-aehcwkovsgprkehbwukadjpkfnca/___PROJECTNAMEASIDENTIFIER____Prefix.pch.gch
+x___PROJECTNAMEASIDENTIFIER____Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/___PROJECTNAMEASIDENTIFIER____Prefix.pch: No such file or directory
+oi686-apple-darwin10-gcc-4.2.1: warning: '-x objective-c-header' after last input file has no effect
+oi686-apple-darwin10-gcc-4.2.1: no input files
+lSLF07#2@51"Precompile ___PROJECTNAMEASIDENTIFIER____Prefix.pch317427640#317427640#0(418"i686-apple-darwin10-gcc-4.2.1: /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/___PROJECTNAMEASIDENTIFIER____Prefix.pch: No such file or directoryi686-apple-darwin10-gcc-4.2.1: warning: '-x objective-c-header' after last input file has no effecti686-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@103"Command /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1317427640#18446744073709551615#0#0(1@0"0(0#0#109"/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/___PROJECTNAMEASIDENTIFIER____Prefix.pch8604264096#2379"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/___PROJECTNAME___-generated-files.hmap -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/___PROJECTNAME___-own-target-headers.hmap -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/___PROJECTNAME___-all-target-headers.hmap -iquote /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/___PROJECTNAME___-project-headers.hmap -F/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator -iquote/Users/simonmadine/Documents/PhoneGapLib/Classes/JSON -iquote/Users/simonmadine/Documents/PhoneGapLib/Classes -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/include -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources/i386 -I/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/AppCMS.build/Debug-iphonesimulator/AppCMS.build/DerivedSources -c /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/___PROJECTNAMEASIDENTIFIER____Prefix.pch -o /var/folders/nd/ndfb8y9KFiaETGs8VL+S0++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/___PROJECTNAMEASIDENTIFIER____Prefix-aehcwkovsgprkehbwukadjpkfnca/___PROJECTNAMEASIDENTIFIER____Prefix.pch.gch1#
+
+CTouch /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app
+s317865402.390561
+e317865402.396647
+r1
+xTouch
+x/Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app
+lSLF07#2@113"Touch /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app317865402#317865402#0(0"0(0#0#0"8603945472#399"    cd /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/AppCMS.app0#
+
+CTouch /Users/simonmadine/Dropbox/AngryRobotZombie/Experiments/AppCMS/xcode/build/Debug-iphonesimulator/___PROJECTNAME___.app
+r0
+

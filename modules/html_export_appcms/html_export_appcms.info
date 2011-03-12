@@ -1,9 +1,0 @@
-name = HTML Export (Modified)
-description = This allows you to export drupal nodes to an HTML format optimised for AppCMS
-core = 6.x
-; Information added by drupal.org packaging script on 2008-08-09
-version = "6.x-1.0"
-core = "6.x"
-project = "html_export_appcms"
-datestamp = "1218317418"
-

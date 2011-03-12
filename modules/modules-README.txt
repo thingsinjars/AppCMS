@@ -20,7 +20,7 @@ http://drupal.org/project/toolbar
 http://drupal.org/project/views
 http://drupal.org/project/views_ui
 
-The standard folder here has versions of the modules which definitely work. If something goes wrong, use one of them.
+The standard folder here has versions of the modules which definitely work. If something goes wrong, use one of them.ÇÙÛ◊.JMU /6
 
 Put these custom modules in the /modules directory
 html_export_appcms
