@@ -6,7 +6,7 @@
         </div>
         <section id="content-<?php echo $node->nid; ?>" class="s-scrollwrapper">
           <div id="contentpane-<?php echo $node->nid; ?>" class="s-scrollpane">
-            <article class="info">
+            <article>
               <?php if($content) { echo $content; } ?>
             </article>
             <?php if ($links): ?>

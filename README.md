@@ -1,17 +1,16 @@
 This is a collection of modules, settings and a custom theme that allows Drupal 6 to be used as a CMS for a mobile app. It can also be used to create a very mobile-friendly site but it's best when the flattened site is put inside the www folder of a PhoneGap project.
 
-Note: Some of these steps could probably be included in the Installation Profile but I haven't figured out how to do that yet.
-Note 2: At the moment, this throws the occasional error during install. This apparently has no effect on whether something has worked or not.
+Note: At the moment, this throws the occasional error during install. This apparently has no effect on whether something has worked or not.
 
 Installation Procedure
 ======================
 
  * Download Drupal 6
  * Unzip onto your server
- * Upload /profiles/AppCMS/appcms.profile
- * Upload the modules listed in modules/modules-README.txt This includes two customised modules:
+ * Upload /profiles/appcms
+ <!-- * Upload the modules listed in modules/modules-README.txt This includes two customised modules:
    * html\_export - More thorough about changing src & href values
-   * jquery\_update - Uses standard jQuery for Admin area, includes jQuery from theme if it exists
+   * jquery\_update - Uses standard jQuery for Admin area, includes jQuery from theme if it exists -->
  * Run the Drupal installer, choosing AppCMS as the Installation Profile
    * Depending on server configuration, you may see an error about flexifield. This is due to an overlapping dependency. It will go away on the next screen
 

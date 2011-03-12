@@ -31,9 +31,9 @@ function appcms_profile_modules() {
     'ahah_response',
     'ctools',
     'token',
-    'date',
     'date_api',
     'date_timezone',
+    'date',
     'filefield',
     'flexifield',
     'automenu',
@@ -219,13 +219,9 @@ variable_set("user_email_verification", true);
     node_type_save($type);
   }
 
-// db_query("INSERT INTO {node_type} (type, name, module, description, help, has_title, title_label, has_body, body_label, min_word_count, custom, modified, locked, orig_type) VALUES ('event', 'Event', 'node', 'Basic event type', '', '1', 'Title', '1', 'Body', '0', '1', '1', '0', '')");
-// db_query("INSERT INTO {node_type} (type, name, module, description, help, has_title, title_label, has_body, body_label, min_word_count, custom, modified, locked, orig_type) VALUES ('page', 'Page', 'node', 'A <em>page</em>, similar in form to a <em>story</em>, is a simple method for creating and displaying information that rarely changes, such as an \"About us\" section of a website. By default, a <em>page</em> entry does not allow visitor comments and is not featured on the site\'s initial home page.', '', '1', 'Title', '1', 'Body', '0', '1', '1', '0', 'page')");
-// db_query("INSERT INTO {node_type} (type, name, module, description, help, has_title, title_label, has_body, body_label, min_word_count, custom, modified, locked, orig_type) VALUES ('story', 'Story', 'node', 'A <em>story</em>, similar in form to a <em>page</em>, is ideal for creating and displaying content that informs or engages website visitors. Press releases, site announcements, and informal blog-like entries may all be created with a <em>story</em> entry. By default, a <em>story</em> entry is automatically featured on the site\'s initial home page, and provides the ability to post comments.', '', '1', 'Title', '1', 'Body', '0', '1', '1', '0', 'story')");
-
-
 /********************************
  *     CUSTOM FIELD TYPES       *
+ field_audio, field_video, field_icon, field_images, field_date
  ********************************/
 db_query("INSERT INTO `content_node_field` (`field_name`, `type`, `global_settings`, `required`, `multiple`, `db_storage`, `module`, `db_columns`, `active`, `locked`) VALUES ('field_video', 'filefield', '%s', 0, 0, 1, 'filefield', '%s', 1, 0)", 'a:3:{s:10:"list_field";s:1:"0";s:12:"list_default";i:1;s:17:"description_field";s:1:"0";}','a:3:{s:3:"fid";a:3:{s:4:"type";s:3:"int";s:8:"not null";b:0;s:5:"views";b:1;}s:4:"list";a:4:{s:4:"type";s:3:"int";s:4:"size";s:4:"tiny";s:8:"not null";b:0;s:5:"views";b:1;}s:4:"data";a:3:{s:4:"type";s:4:"text";s:9:"serialize";b:1;s:5:"views";b:1;}}');
 db_query("INSERT INTO `content_node_field` (`field_name`, `type`, `global_settings`, `required`, `multiple`, `db_storage`, `module`, `db_columns`, `active`, `locked`) VALUES ('field_audio', 'filefield', '%s', 0, 0, 1, 'filefield', '%s', 1, 0)", 'a:3:{s:10:"list_field";s:1:"0";s:12:"list_default";i:1;s:17:"description_field";s:1:"0";}','a:3:{s:3:"fid";a:3:{s:4:"type";s:3:"int";s:8:"not null";b:0;s:5:"views";b:1;}s:4:"list";a:4:{s:4:"type";s:3:"int";s:4:"size";s:4:"tiny";s:8:"not null";b:0;s:5:"views";b:1;}s:4:"data";a:3:{s:4:"type";s:4:"text";s:9:"serialize";b:1;s:5:"views";b:1;}}');
@@ -235,6 +231,7 @@ db_query("INSERT INTO `content_node_field` (`field_name`, `type`, `global_settin
 
 /********************************
  *    CUSTOM FIELD INSTANCES    *
+ field_audio, field_video, field_icon, field_images, field_date
  ********************************/
 db_query("INSERT INTO `content_node_field_instance` (`field_name`, `type_name`, `weight`, `label`, `widget_type`, `widget_settings`, `display_settings`, `description`, `widget_module`, `widget_active`) VALUES ('field_audio', 'page', -1, 'Audio', 'filefield_widget', '%s', '%s', 'Upload audio to embed it in this page', 'filefield', 1)", 'a:5:{s:15:"file_extensions";s:15:"mp3 ogg wav m4a";s:9:"file_path";s:0:"";s:18:"progress_indicator";s:3:"bar";s:21:"max_filesize_per_file";s:0:"";s:21:"max_filesize_per_node";s:0:"";}', 'a:8:{s:6:"weight";s:2:"-1";s:6:"parent";s:0:"";s:5:"label";a:1:{s:6:"format";s:6:"hidden";}s:6:"teaser";a:2:{s:6:"format";s:28:"custom_formatters_html5audio";s:7:"exclude";i:0;}s:4:"full";a:2:{s:6:"format";s:28:"custom_formatters_html5audio";s:7:"exclude";i:0;}s:12:"mobile_tools";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}i:4;a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}s:5:"token";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}}');
 
@@ -250,6 +247,7 @@ db_query("INSERT INTO `content_node_field_instance` (`field_name`, `type_name`, 
 
 /********************************
  *      CUSTOM FORMATTERS       *
+ html5audio, html5video, image_gallery
  *******************************/
 db_query("INSERT INTO `formatters` (`name`, `label`, `field_types`, `multiple`, `description`, `mode`, `code`) VALUES ('html5audio', 'Audio', '%s', 0, 'Field to allow HTML 5 audio embedding', 'basic', 0x3c64697620636c6173733d2268746d6c352d617564696f2d706c61796572223e0d0a3c617564696f20636f6e74726f6c73207072656c6f61643d226175746f22206175746f6275666665723e200d0a20203c736f75726365207372633d225b736974652d75726c5d2f5b66696c656669656c642d66696c65706174685d22202f3e0d0a3c2f617564696f3e0d0a3c2f6469763e)", 'a:1:{i:0;s:9:"filefield";}');
 

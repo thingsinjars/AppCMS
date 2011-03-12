@@ -12,3 +12,6 @@
 	    	height:auto;
     	}
 */
+.jqt_calendar thead th span {
+	top:5px;
+}

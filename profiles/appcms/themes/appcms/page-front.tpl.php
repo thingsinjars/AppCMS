@@ -1,17 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
 
     <title><?php print $head_title ?></title>
-    <!-- These must come from a setting somewhere -->
-    <!--57px at 163dpi - iPhone 3G / 3GS - iOS before 4.2, uses CSS Media Queries-->
-    <link rel="apple-touch-icon-precomposed" media="screen and (resolution: 163dpi)" href="/themes/appcms/images/icon.png" />
-    <!--72px at 132dpi for iPad v1, before 4.2-->
-    <link rel="apple-touch-icon-precomposed" media="screen and (resolution: 132dpi)" href="/themes/appcms/images/icon-72.png" />
-    <!--114px at 326dpi for iPhone 4, before 4.2-->
-    <link rel="apple-touch-icon-precomposed" media="screen and (-webkit-min-device-pixel-ratio: 2)" href="/themes/appcms/images/icon@2x.png" />
 
-    <link rel="apple-touch-startup-image" href="/themes/appcms/images/startup.png" />
+    <!--57px at 163dpi - iPhone 3G / 3GS - iOS before 4.2, uses CSS Media Queries-->
+    <link rel="apple-touch-icon-precomposed" media="screen and (resolution: 163dpi)" href="/profiles/appcms/themes/appcms/images/icon.png" />
+    <!--72px at 132dpi for iPad v1, before 4.2-->
+    <link rel="apple-touch-icon-precomposed" media="screen and (resolution: 132dpi)" href="/profiles/appcms/themes/appcms/images/icon-72.png" />
+    <!--114px at 326dpi for iPhone 4, before 4.2-->
+    <link rel="apple-touch-icon-precomposed" media="screen and (-webkit-min-device-pixel-ratio: 2)" href="/profiles/appcms/themes/appcms/images/icon@2x.png" />
+
+    <link rel="apple-touch-startup-image" href="/profiles/appcms/themes/appcms/images/startup.png" />
+		<meta name="format-detection" content="telephone=no" />
 
     <?php print $styles ?>
 
