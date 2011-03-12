@@ -8,11 +8,10 @@ Installation Procedure
  * Download Drupal 6
  * Unzip onto your server
  * Upload /profiles/appcms
+ * Run the Drupal installer, choosing AppCMS as the Installation Profile
  <!-- * Upload the modules listed in modules/modules-README.txt This includes two customised modules:
    * html\_export - More thorough about changing src & href values
    * jquery\_update - Uses standard jQuery for Admin area, includes jQuery from theme if it exists -->
- * Run the Drupal installer, choosing AppCMS as the Installation Profile
-   * Depending on server configuration, you may see an error about flexifield. This is due to an overlapping dependency. It will go away on the next screen
 
 
 
@@ -39,9 +38,9 @@ Structure
 Home Page
 ---------
   * An introduction page will be created automatically
-  * This can be edited at /node/1/edit
+    * This can be edited at /node/1/edit
   * The 'Default front page' will be set to this static page
-	* Visit /admin/settings/site-information to change it
+	  * Visit /admin/settings/site-information to change it
 
 
 Navigation

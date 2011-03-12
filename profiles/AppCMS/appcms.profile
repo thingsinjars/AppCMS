@@ -60,10 +60,6 @@ install_include(appcms_profile_modules());
  ********************************/
 variable_set("add_date_format_title", '');
 variable_set("add_date_format_type", '');
-variable_set("admin_theme", 'seven');
-variable_set("admin_theme_admin_theme_batch", 1);
-variable_set("admin_theme_path", 'admin/build/block');
-variable_set("admin_theme_path_disallow", '');
 variable_set("anonymous", 'Anonymous');
 variable_set("automenu_hide_calendar", 0);
 variable_set("automenu_hide_calendar_item", 0);
@@ -157,7 +153,6 @@ variable_set("site_name", 'AppCMS');
 variable_set("site_slogan", '');
 variable_set("theme_appcms_settings", array ( 'toggle_logo' => 0, 'toggle_name' => 0, 'toggle_slogan' => 0, 'toggle_mission' => 0, 'toggle_node_user_picture' => 0, 'toggle_comment_user_picture' => 0, 'toggle_search' => 0, 'toggle_favicon' => 1, 'toggle_primary_links' => 1, 'toggle_secondary_links' => 0, 'default_logo' => 0, 'logo_path' => '', 'logo_upload' => '', 'default_favicon' => 1, 'favicon_path' => '', 'favicon_upload' => '', 'appcms_theme' => 'apple', ));
 system_theme_data();
-variable_set("theme_default", 'appcms');
 variable_set("update_last_check", 1298631072);
 variable_set("upload_calendar", '0');
 variable_set("upload_calendar_item", '1');
@@ -170,6 +165,14 @@ variable_set("upload_max_resolution", '0');
 variable_set("upload_uploadsize_default", '7');
 variable_set("upload_usersize_default", '100');
 variable_set("user_email_verification", true);
+
+theme_enable(array('appcms', 'seven'));
+variable_set("theme_default", 'appcms');
+variable_set("admin_theme", 'seven');
+variable_set("admin_theme_admin_theme_batch", 1);
+variable_set("admin_theme_path", 'admin/build/block');
+variable_set("admin_theme_path_disallow", '');
+
 
 
 /********************************
