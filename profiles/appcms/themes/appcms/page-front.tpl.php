@@ -5,13 +5,13 @@
     <title><?php print $head_title ?></title>
 
     <!--57px at 163dpi - iPhone 3G / 3GS - iOS before 4.2, uses CSS Media Queries-->
-    <link rel="apple-touch-icon-precomposed" media="screen and (resolution: 163dpi)" href="/profiles/appcms/themes/appcms/images/icon.png" />
+    <link rel="apple-touch-icon-precomposed" media="screen and (resolution: 163dpi)" href="<?php echo theme_get_setting('favicon_path'); ?>" />
     <!--72px at 132dpi for iPad v1, before 4.2-->
-    <link rel="apple-touch-icon-precomposed" media="screen and (resolution: 132dpi)" href="/profiles/appcms/themes/appcms/images/icon-72.png" />
+    <link rel="apple-touch-icon-precomposed" media="screen and (resolution: 132dpi)" href="<?php echo theme_get_setting('favicon_path'); ?>" />
     <!--114px at 326dpi for iPhone 4, before 4.2-->
-    <link rel="apple-touch-icon-precomposed" media="screen and (-webkit-min-device-pixel-ratio: 2)" href="/profiles/appcms/themes/appcms/images/icon@2x.png" />
+    <link rel="apple-touch-icon-precomposed" media="screen and (-webkit-min-device-pixel-ratio: 2)" href="<?php echo theme_get_setting('favicon_path'); ?>" />
 
-    <link rel="apple-touch-startup-image" href="/profiles/appcms/themes/appcms/images/startup.png" />
+    <link rel="apple-touch-startup-image" href="<?php echo theme_get_setting('logo_path'); ?>" />
 		<meta name="format-detection" content="telephone=no" />
 
     <?php print $styles ?>
@@ -48,7 +48,7 @@ if(!$logo) {
               $icon = $this_item['page_arguments'][0]->field_icon[0]['filepath'];
             } else {
               if($this_item['page_arguments'][0] == 'events_list') {
-                $icon = '/themes/appcms/images/events.png';
+                $icon = '/profiles/appcms/themes/appcms/images/events.png';
               }
             }
             $out .= '<li><a href="' . $link['href'] . '" mask="'. $icon .'" animation="fade"><strong>' . $link['title']  . '</strong></a></li>'."\n";
