@@ -166,7 +166,7 @@ variable_set("upload_uploadsize_default", '7');
 variable_set("upload_usersize_default", '100');
 variable_set("user_email_verification", true);
 
-theme_enable(array('appcms', 'seven'));
+// install_enable_theme(array('appcms', 'seven'));
 variable_set("theme_default", 'appcms');
 variable_set("admin_theme", 'seven');
 variable_set("admin_theme_admin_theme_batch", 1);
@@ -232,33 +232,29 @@ db_query("INSERT INTO `content_node_field` (`field_name`, `type`, `global_settin
 db_query("INSERT INTO `content_node_field` (`field_name`, `type`, `global_settings`, `required`, `multiple`, `db_storage`, `module`, `db_columns`, `active`, `locked`) VALUES ('field_icon', 'filefield', '%s', 0, 0, 1, 'filefield', '%s', 1, 0)", 'a:3:{s:10:"list_field";s:1:"0";s:12:"list_default";i:1;s:17:"description_field";s:1:"0";}', 'a:3:{s:3:"fid";a:3:{s:4:"type";s:3:"int";s:8:"not null";b:0;s:5:"views";b:1;}s:4:"list";a:4:{s:4:"type";s:3:"int";s:4:"size";s:4:"tiny";s:8:"not null";b:0;s:5:"views";b:1;}s:4:"data";a:3:{s:4:"type";s:4:"text";s:9:"serialize";b:1;s:5:"views";b:1;}}');
 db_query("INSERT INTO `content_node_field` (`field_name`, `type`, `global_settings`, `required`, `multiple`, `db_storage`, `module`, `db_columns`, `active`, `locked`) VALUES ('field_date', 'date', '%s', 1, 0, 1, 'date', '%s', 1, 0)", 'a:7:{s:11:"granularity";a:5:{s:4:"year";s:4:"year";s:5:"month";s:5:"month";s:3:"day";s:3:"day";s:4:"hour";s:4:"hour";s:6:"minute";s:6:"minute";}s:11:"timezone_db";s:3:"UTC";s:11:"tz_handling";s:4:"site";s:6:"todate";s:0:"";s:6:"repeat";i:0;s:16:"repeat_collapsed";s:0:"";s:14:"default_format";s:8:"datetime";}', 'a:1:{s:5:"value";a:5:{s:4:"type";s:7:"varchar";s:6:"length";i:20;s:8:"not null";b:0;s:8:"sortable";b:1;s:5:"views";b:1;}}');
 
+
+
 /********************************
  *    CUSTOM FIELD INSTANCES    *
  field_audio, field_video, field_icon, field_images, field_date
  ********************************/
 db_query("INSERT INTO `content_node_field_instance` (`field_name`, `type_name`, `weight`, `label`, `widget_type`, `widget_settings`, `display_settings`, `description`, `widget_module`, `widget_active`) VALUES ('field_audio', 'page', -1, 'Audio', 'filefield_widget', '%s', '%s', 'Upload audio to embed it in this page', 'filefield', 1)", 'a:5:{s:15:"file_extensions";s:15:"mp3 ogg wav m4a";s:9:"file_path";s:0:"";s:18:"progress_indicator";s:3:"bar";s:21:"max_filesize_per_file";s:0:"";s:21:"max_filesize_per_node";s:0:"";}', 'a:8:{s:6:"weight";s:2:"-1";s:6:"parent";s:0:"";s:5:"label";a:1:{s:6:"format";s:6:"hidden";}s:6:"teaser";a:2:{s:6:"format";s:28:"custom_formatters_html5audio";s:7:"exclude";i:0;}s:4:"full";a:2:{s:6:"format";s:28:"custom_formatters_html5audio";s:7:"exclude";i:0;}s:12:"mobile_tools";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}i:4;a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}s:5:"token";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}}');
-
 db_query("INSERT INTO `content_node_field_instance` (`field_name`, `type_name`, `weight`, `label`, `widget_type`, `widget_settings`, `display_settings`, `description`, `widget_module`, `widget_active`) VALUES ('field_video', 'page', 0, 'Video', 'filefield_widget', '%s', '%s', 'Upload video to embed it in this page', 'filefield', 1)", 'a:5:{s:15:"file_extensions";s:20:"mp4 m4v ogv webm mov";s:9:"file_path";s:0:"";s:18:"progress_indicator";s:3:"bar";s:21:"max_filesize_per_file";s:0:"";s:21:"max_filesize_per_node";s:0:"";}', 'a:8:{s:6:"weight";i:0;s:6:"parent";s:0:"";s:5:"label";a:1:{s:6:"format";s:6:"hidden";}s:6:"teaser";a:2:{s:6:"format";s:28:"custom_formatters_html5video";s:7:"exclude";i:0;}s:4:"full";a:2:{s:6:"format";s:28:"custom_formatters_html5video";s:7:"exclude";i:0;}s:12:"mobile_tools";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}i:4;a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}s:5:"token";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}}');
-
 db_query("INSERT INTO `content_node_field_instance` (`field_name`, `type_name`, `weight`, `label`, `widget_type`, `widget_settings`, `display_settings`, `description`, `widget_module`, `widget_active`) VALUES ('field_icon', 'page', 2, 'Icon', 'filefield_widget', '%s', '%s', 'Upload an icon to use in the Tab Bar. This is only required for the main sections.', 'filefield', 1)", 'a:5:{s:15:"file_extensions";s:3:"png";s:9:"file_path";s:0:"";s:18:"progress_indicator";s:3:"bar";s:21:"max_filesize_per_file";s:0:"";s:21:"max_filesize_per_node";s:0:"";}', 'a:8:{s:6:"weight";s:1:"2";s:6:"parent";s:0:"";s:5:"label";a:1:{s:6:"format";s:5:"above";}s:6:"teaser";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:1;}s:4:"full";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:1;}s:12:"mobile_tools";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}i:4;a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}s:5:"token";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}}');
-
 db_query("INSERT INTO `content_node_field_instance` (`field_name`, `type_name`, `weight`, `label`, `widget_type`, `widget_settings`, `display_settings`, `description`, `widget_module`, `widget_active`) VALUES ('field_images', 'page', 1, 'Images', 'filefield_widget', '%s', '%s', 'Upload images you would like to appear in your gallery', 'filefield', 1)", 'a:5:{s:15:"file_extensions";s:16:"jpg png gif jpeg";s:9:"file_path";s:0:"";s:18:"progress_indicator";s:3:"bar";s:21:"max_filesize_per_file";s:0:"";s:21:"max_filesize_per_node";s:0:"";}', 'a:8:{s:6:"weight";s:1:"1";s:6:"parent";s:0:"";s:5:"label";a:1:{s:6:"format";s:6:"hidden";}s:6:"teaser";a:2:{s:6:"format";s:31:"custom_formatters_image_gallery";s:7:"exclude";i:0;}s:4:"full";a:2:{s:6:"format";s:31:"custom_formatters_image_gallery";s:7:"exclude";i:0;}s:12:"mobile_tools";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}i:4;a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}s:5:"token";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}}');
-
 db_query("INSERT INTO `content_node_field_instance` (`field_name`, `type_name`, `weight`, `label`, `widget_type`, `widget_settings`, `display_settings`, `description`, `widget_module`, `widget_active`) VALUES ('field_date', 'event', -4, 'Date', 'date_select', '%s', '%s', '', 'date', 1)", 'a:10:{s:13:"default_value";s:5:"blank";s:18:"default_value_code";s:0:"";s:14:"default_value2";s:4:"same";s:19:"default_value_code2";s:0:"";s:12:"input_format";s:11:"Y-m-d H:i:s";s:19:"input_format_custom";s:0:"";s:9:"increment";s:1:"5";s:10:"text_parts";a:0:{}s:10:"year_range";s:5:"-3:+3";s:14:"label_position";s:5:"above";}', 'a:6:{s:5:"label";a:2:{s:6:"format";s:5:"above";s:7:"exclude";i:0;}s:12:"mobile_tools";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}s:6:"teaser";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}s:4:"full";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}i:4;a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}s:5:"token";a:2:{s:6:"format";s:7:"default";s:7:"exclude";i:0;}}');
 
-
+db_query("CREATE TABLE IF NOT EXISTS `content_type_event` (`vid` int(10) unsigned NOT NULL DEFAULT '0', `nid` int(10) unsigned NOT NULL DEFAULT '0', `field_date_value` varchar(20) DEFAULT NULL, `field_date_value2` varchar(20) DEFAULT NULL, PRIMARY KEY (`vid`), KEY `nid` (`nid`)) ENGINE=MyISAM DEFAULT CHARSET=utf8;");
+db_query("INSERT INTO `date_format_types` (`type`, `title`, `locked`) VALUES ('long', 'Long', 1), ('medium', 'Medium', 1), ('short', 'Short', 1), ('datetime', 'Datetime', 1)");
+db_query("INSERT INTO `date_formats` (`format`, `type`, `locked`) VALUES ('%s', 'custom', 0)", 'Y-m-j\\Th:i\\Z');
 
 /********************************
  *      CUSTOM FORMATTERS       *
  html5audio, html5video, image_gallery
  *******************************/
 db_query("INSERT INTO `formatters` (`name`, `label`, `field_types`, `multiple`, `description`, `mode`, `code`) VALUES ('html5audio', 'Audio', '%s', 0, 'Field to allow HTML 5 audio embedding', 'basic', 0x3c64697620636c6173733d2268746d6c352d617564696f2d706c61796572223e0d0a3c617564696f20636f6e74726f6c73207072656c6f61643d226175746f22206175746f6275666665723e200d0a20203c736f75726365207372633d225b736974652d75726c5d2f5b66696c656669656c642d66696c65706174685d22202f3e0d0a3c2f617564696f3e0d0a3c2f6469763e)", 'a:1:{i:0;s:9:"filefield";}');
-
 db_query("INSERT INTO `formatters` (`name`, `label`, `field_types`, `multiple`, `description`, `mode`, `code`) VALUES ('html5video', 'Video', '%s', 0, 'Field to allow HTML 5 video embedding', 'basic', 0x3c64697620636c6173733d2268746d6c352d766964656f2d706c61796572223e0d0a3c766964656f20636f6e74726f6c73207072656c6f61643d226175746f22206175746f6275666665723e200d0a20203c736f75726365207372633d225b736974652d75726c5d2f5b66696c656669656c642d66696c65706174685d222020747970653d27766964656f2f6d70343b20636f646563733d22617663312e3432453031452c206d7034612e34302e32223b273e0d0a3c2f766964656f3e0d0a3c2f6469763e)", 'a:1:{i:0;s:9:"filefield";}');
-
 db_query("INSERT INTO `formatters` (`name`, `label`, `field_types`, `multiple`, `description`, `mode`, `code`) VALUES ('image_gallery', 'Image Gallery', '%s', 1, 'JavaScript gallery of images', 'advanced', 0x6966202820636f756e742824656c656d656e745b27236e6f6465275d2d3e6669656c645f696d6167657329203e20302026262069735f61727261792824656c656d656e745b27236e6f6465275d2d3e6669656c645f696d616765735b305d2929207b0d0a246f7574707574203d20273c73637269707420747970653d22746578742f6a617661736372697074223e272e225c6e223b0d0a246f7574707574202e3d20276a51542e67656e657261746547616c6c657279282267616c6c65727927202e2024656c656d656e745b27236e6f6465275d2d3e6e6964202e2027222c205b272e225c6e223b0d0a666f7265616368202824656c656d656e745b27236e6f6465275d2d3e6669656c645f696d616765732061732024696d61676529207b0d0a202020246f7574707574202e3d277b7372633a2227202e2024696d6167655b2766696c6570617468275d202e2027227d2c272e225c6e223b0d0a7d0d0a246f7574707574202e3d20275d2c7b64656661756c74496e6465783a307d293b273b0d0a246f7574707574202e3d20273c2f7363726970743e272e225c6e223b0d0a246f7574707574202e3d20273c756c20636c6173733d2265646765746f65646765223e3c6c693e3c6120687265663d222367616c6c65727927202e2024656c656d656e745b27236e6f6465275d2d3e6e6964202e2027223e4c61756e63682067616c6c6572793c2f613e3c2f6c693e3c2f756c3e272e225c6e223b0d0a246f7574707574202e3d20273c2f7363726970743e272e225c6e223b0d0a72657475726e20246f75747075743b0d0a7d)", 'a:1:{i:0;s:9:"filefield";}');
-
-
 
 /********************************
  *    ROLES AND PERMISSIONS     *
@@ -298,7 +294,7 @@ $params = array(
   'format' => 2,
 );
 $node = install_create_node('Installation', 'Sample event showing the installation date', $params);
-db_query("INSERT INTO `content_type_event` (`vid`, `nid`, `field_date_value`) VALUES ($node['nid'], $node['nid'], date("Y-m-d\TH:00:00"))");
+db_query("INSERT INTO `content_type_event` (`vid`, `nid`, `field_date_value`) VALUES ('".$node->nid."', '".$node->nid."', '".date("Y-m-d\TH:00:00")."')");
 
 
 /********************************
