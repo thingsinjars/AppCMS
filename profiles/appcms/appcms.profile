@@ -256,7 +256,6 @@ db_query("INSERT INTO `formatters` (`name`, `label`, `field_types`, `multiple`, 
 
 db_query("INSERT INTO `formatters` (`name`, `label`, `field_types`, `multiple`, `description`, `mode`, `code`) VALUES ('html5video', 'Video', '%s', 0, 'Field to allow HTML 5 video embedding', 'basic', 0x3c64697620636c6173733d2268746d6c352d766964656f2d706c61796572223e0d0a3c766964656f20636f6e74726f6c73207072656c6f61643d226175746f22206175746f6275666665723e200d0a20203c736f75726365207372633d225b736974652d75726c5d2f5b66696c656669656c642d66696c65706174685d222020747970653d27766964656f2f6d70343b20636f646563733d22617663312e3432453031452c206d7034612e34302e32223b273e0d0a3c2f766964656f3e0d0a3c2f6469763e)", 'a:1:{i:0;s:9:"filefield";}');
 
-
 db_query("INSERT INTO `formatters` (`name`, `label`, `field_types`, `multiple`, `description`, `mode`, `code`) VALUES ('image_gallery', 'Image Gallery', '%s', 1, 'JavaScript gallery of images', 'advanced', 0x6966202820636f756e742824656c656d656e745b27236e6f6465275d2d3e6669656c645f696d6167657329203e20302026262069735f61727261792824656c656d656e745b27236e6f6465275d2d3e6669656c645f696d616765735b305d2929207b0d0a246f7574707574203d20273c73637269707420747970653d22746578742f6a617661736372697074223e272e225c6e223b0d0a246f7574707574202e3d20276a51542e67656e657261746547616c6c657279282267616c6c65727927202e2024656c656d656e745b27236e6f6465275d2d3e6e6964202e2027222c205b272e225c6e223b0d0a666f7265616368202824656c656d656e745b27236e6f6465275d2d3e6669656c645f696d616765732061732024696d61676529207b0d0a202020246f7574707574202e3d277b7372633a2227202e2024696d6167655b2766696c6570617468275d202e2027227d2c272e225c6e223b0d0a7d0d0a246f7574707574202e3d20275d2c7b64656661756c74496e6465783a307d293b273b0d0a246f7574707574202e3d20273c2f7363726970743e272e225c6e223b0d0a246f7574707574202e3d20273c756c20636c6173733d2265646765746f65646765223e3c6c693e3c6120687265663d222367616c6c65727927202e2024656c656d656e745b27236e6f6465275d2d3e6e6964202e2027223e4c61756e63682067616c6c6572793c2f613e3c2f6c693e3c2f756c3e272e225c6e223b0d0a246f7574707574202e3d20273c2f7363726970743e272e225c6e223b0d0a72657475726e20246f75747075743b0d0a7d)", 'a:1:{i:0;s:9:"filefield";}');
 
 
@@ -273,25 +272,34 @@ install_add_permissions($roles_map[2], array ( 0 => 'access comments', 1 => 'acc
 /********************************
  *     CONTENT: Intro Page      *
  ********************************/
-$node = array(
+$params = array(
   'type' => 'page',
-  'title' => 'Introduction',
-  'body' => 'This is the introduction page for your app',
-  'field_body' => array(
-    0 => array(
-      'value' => '<p>This is the introduction page for your app</p>',
-      'format' => 2,
-    ),
-  ),
   'uid' => 1,
   'status' => 1,
-  'promote' => 1,
-  'sticky' => 1,
+  'promote' => 0,
+  'sticky' => 0,
   'comment' => 0,
   'format' => 2,
 );
-$node = (object) $node;
-node_save($node);
+// $node = (object) $node;
+// node_save($node);
+install_create_node('Introduction', 'This is the introduction page for your app', $params);
+install_create_node('Start', 'This is the starting section for your app', $params);
+install_create_node('Subpage', 'This is an example page within a section', $params);
+
+//Insert an example event dated for now
+$params = array(
+  'type' => 'event',
+  'uid' => 1,
+  'status' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'comment' => 0,
+  'format' => 2,
+);
+$node = install_create_node('Installation', 'Sample event showing the installation date', $params);
+db_query("INSERT INTO `content_type_event` (`vid`, `nid`, `field_date_value`) VALUES ($node['nid'], $node['nid'], date("Y-m-d\TH:00:00"))");
+
 
 /********************************
  *            VIEWS             *
@@ -333,7 +341,7 @@ $view->save();
  *        MENU: TAB BAR         *
  ********************************/
 db_query("UPDATE {menu_custom} SET title='Tab Bar' WHERE menu_name='primary-links'");
-// $mlids["primary-links_kids_0"] = install_menu_create_menu_item('node/2', 'Home', '', $menu_name, $mlids["primary-links_kids"], '-50', 'menu', '1', FALSE, '0', '1', '0');
+$mlids["primary-links_kids_0"] = install_menu_create_menu_item('node/2', 'Home', '', $menu_name, $mlids["primary-links_kids"], '-50', 'menu', '1', FALSE, '0', '1', '0');
 
 /********************************
  *       BLOCKS AND BOXES        *
